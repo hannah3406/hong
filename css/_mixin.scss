@@ -1,0 +1,21 @@
+@mixin head{
+    display:inline-block;
+    vertical-align:middle;
+}
+
+@mixin flex($j:space-between,$k:flex,$a:center){
+    display:$k;
+    justify-content: $j;
+    align-items:$a
+} 
+
+@mixin fontStyle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.94rem;
+    font-weight: 700;
+    text-align:center;
+}
+
+@mixin width{
+    max-width: 1660px;  margin:0 auto;
+}
