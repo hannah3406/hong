@@ -19,3 +19,9 @@
 @mixin width{
     max-width: 1660px;  margin:0 auto;
 }
+
+@mixin circle{
+    position:absolute;
+    border-radius:50%;
+    opacity:0.6;
+}

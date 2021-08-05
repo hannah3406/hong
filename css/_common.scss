@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 html,body{
-    margin:0;
+    margin:0;padding:0;
 }
 ul,li,ol{list-style:none;margin:0;padding:0;}
 h1,h2,h3,h4,h5,h6,figure,p{margin:0;}
@@ -9,7 +9,7 @@ img{vertical-align:top;}
 a{text-decoration:none; cursor:pointer;}
 
 *{
-    font-family: 'Nunito Sans','Montserrat', sans-serif; 
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 17px;
     color: #401e20;
     line-height: 1.4;
@@ -17,6 +17,8 @@ a{text-decoration:none; cursor:pointer;}
     word-break: keep-all;
     box-sizing: border-box;
     outline: none;
+    margin:0; padding:0;
 }
 html{scroll-behavior: smooth;}
+h2{font-family: 'Montserrat', sans-serif;}
 

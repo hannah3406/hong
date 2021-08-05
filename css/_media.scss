@@ -509,6 +509,7 @@ main{
                     max-width: 160px;
                     height: 40px;
                     line-height: 2.5;
+                    border: solid 2px #f52334;
                 }
             }
         }
@@ -681,6 +682,7 @@ main{
                     max-width: 160px;
                     height: 40px;
                     line-height: 2.5;
+                    border: solid 2px #f52334;
                 }
         }
     }
@@ -882,9 +884,9 @@ main{
                 display: inline-block;
                 vertical-align: middle;
                 // width: 180%;
-                line-height:3.2;
+                line-height:2.6;
                 // right: -180%;
-                font-size: 4.8rem;
+                font-size: 4.6rem;
                 color: #f52334;
                 font-weight: 700;
                 // animation: flow 50s linear infinite;
