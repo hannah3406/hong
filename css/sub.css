@@ -535,9 +535,11 @@ main .s-1 .s-1-content .s-1-img .img-txt {
   top: 0;
   -webkit-animation: beat 1s infinite;
           animation: beat 1s infinite;
+  z-index: 23;
 }
 
 main .s-1 .s-1-content .s-1-img .imgbg {
+  position: relative;
   z-index: -1;
   width: 590px;
   height: 590px;
@@ -609,6 +611,15 @@ main .s-1 .bgcircle-right2 {
   background-color: #dff4f0;
   right: -170px;
   bottom: 30px;
+  z-index: -1;
+}
+
+main .s-1 .bigimg-bg {
+  position: absolute;
+  width: 392px;
+  height: 392px;
+  right: 600px;
+  bottom: 60px;
   z-index: -1;
 }
 

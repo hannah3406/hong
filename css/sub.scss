@@ -322,8 +322,9 @@ main{
                 width:45%;
                 position:relative;
                 .img-icon{position:absolute;left:-50px;top:30%;animation:fun 2s infinite; animation-delay:.8s;}
-                .img-txt{position:absolute;right:0;top:0; animation:beat 1s infinite;}
+                .img-txt{position:absolute;right:0;top:0; animation:beat 1s infinite;  z-index:23;}
                 .imgbg{
+                    position:relative;
                     z-index:-1;
                     width:590px;
                     height:590px;
@@ -379,6 +380,14 @@ main{
             right:-170px;
             bottom:30px;
             z-index:-1
+        }
+        .bigimg-bg{
+            position:absolute;
+            width:392px;
+            height:392px;
+            right:600px;
+            bottom:60px;
+            z-index:-1;
         }
     }
     .s-2{
