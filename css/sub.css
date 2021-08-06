@@ -552,8 +552,8 @@ main .s-1 .s-1-content .s-1-img .imgbg .bigimg {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
   opacity: 0;
-  -webkit-animation: appearanceimg 1s forwards;
-          animation: appearanceimg 1s forwards;
+  -webkit-animation: appearanceimg 1.25s forwards;
+          animation: appearanceimg 1.25s forwards;
   -webkit-animation-delay: .3s;
           animation-delay: .3s;
 }
@@ -822,24 +822,19 @@ footer .footer .foot_copy {
             transform: translateX(0%) scale(0.9);
     opacity: 1;
   }
-  50% {
+  55% {
+    -webkit-transform: rotate(-4deg) scale(0.9);
+            transform: rotate(-4deg) scale(0.9);
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: rotate(4deg) scale(0.9);
+            transform: rotate(4deg) scale(0.9);
+    opacity: 1;
+  }
+  85% {
     -webkit-transform: rotate(-2deg) scale(0.9);
             transform: rotate(-2deg) scale(0.9);
-    opacity: 1;
-  }
-  62% {
-    -webkit-transform: rotate(2deg) scale(0.9);
-            transform: rotate(2deg) scale(0.9);
-    opacity: 1;
-  }
-  75% {
-    -webkit-transform: rotate(-2deg) scale(0.9);
-            transform: rotate(-2deg) scale(0.9);
-    opacity: 1;
-  }
-  87% {
-    -webkit-transform: rotate(2deg) scale(0.9);
-            transform: rotate(2deg) scale(0.9);
     opacity: 1;
   }
   100% {
@@ -860,24 +855,19 @@ footer .footer .foot_copy {
             transform: translateX(0%) scale(0.9);
     opacity: 1;
   }
-  50% {
+  55% {
+    -webkit-transform: rotate(-4deg) scale(0.9);
+            transform: rotate(-4deg) scale(0.9);
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: rotate(4deg) scale(0.9);
+            transform: rotate(4deg) scale(0.9);
+    opacity: 1;
+  }
+  85% {
     -webkit-transform: rotate(-2deg) scale(0.9);
             transform: rotate(-2deg) scale(0.9);
-    opacity: 1;
-  }
-  62% {
-    -webkit-transform: rotate(2deg) scale(0.9);
-            transform: rotate(2deg) scale(0.9);
-    opacity: 1;
-  }
-  75% {
-    -webkit-transform: rotate(-2deg) scale(0.9);
-            transform: rotate(-2deg) scale(0.9);
-    opacity: 1;
-  }
-  87% {
-    -webkit-transform: rotate(2deg) scale(0.9);
-            transform: rotate(2deg) scale(0.9);
     opacity: 1;
   }
   100% {
