@@ -857,6 +857,33 @@ main{
             }
         }
     }
+    .s-3{
+        width:100%;
+        height:100vh;
+        position:relative;
+        overflow:hidden;
+        background-color: #9ad6cb;
+        .s-3-photo{
+            width:100%;
+            height:100%;
+            position:relative;
+            img{
+                position:absolute;
+                top:50%; transform:translateY(-50%);
+                &:nth-of-type(1){left:-10%;}
+                &:nth-of-type(2){left:12%;}
+                &:nth-of-type(3){left:30%;}
+                &:nth-of-type(4){left:50%;}
+                &:nth-of-type(5){left:70%;}
+                &:nth-of-type(6){left:87%;}
+            }
+        }
+        .s-3-text{
+            p{
+                strong{}
+            }
+        }
+    }
 }
 //footer
 footer{
