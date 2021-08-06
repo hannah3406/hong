@@ -638,15 +638,106 @@ main .s-2 .s-2-content {
 
 main .s-2 .s-2-content .s-2-list {
   width: 36%;
+  height: 100%;
+  position: relative;
 }
 
-main .s-2 .s-2-content .s-2-list p {
-  width: 40%;
-  margin: 0 auto;
+main .s-2 .s-2-content .s-2-list .s-2-list-el {
+  width: 35%;
+  position: absolute;
+  right: 20%;
+  top: 30%;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+}
+
+main .s-2 .s-2-content .s-2-list .s-2-list-el li {
+  position: relative;
+  min-width: 300px;
+  margin: 30px 0;
+  display: block;
+  text-align: center;
+  opacity: 0.4;
+}
+
+main .s-2 .s-2-content .s-2-list .s-2-list-el li p {
+  width: 100%;
+}
+
+main .s-2 .s-2-content .s-2-list .s-2-list-el li p strong {
+  position: relative;
+  display: block;
+  min-width: 300px;
+  padding: 15px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  color: #3c2121;
+  font-weight: 700;
+  background-color: #fff9cd;
+}
+
+main .s-2 .s-2-content .s-2-list .s-2-list-el li img {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  right: -70px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+main .s-2 .s-2-content .s-2-list .s-2-list-el li.active {
+  position: relative;
+  min-width: 300px;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  margin: 30px 0;
+  display: block;
+  text-align: center;
+  opacity: 1;
+}
+
+main .s-2 .s-2-content .s-2-list .s-2-list-el li.active p {
+  width: 100%;
+}
+
+main .s-2 .s-2-content .s-2-list .s-2-list-el li.active p strong {
+  position: relative;
+  display: block;
+  min-width: 300px;
+  padding: 15px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  color: #3c2121;
+  font-weight: 700;
+  border: 2px solid #3c2121;
+  background-color: #fff9cd;
+}
+
+main .s-2 .s-2-content .s-2-list .s-2-list-el li.active p strong::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: -10px;
+  bottom: -10px;
+  background: #ee7868;
+  border: 2px solid #3c2121;
+  z-index: -6;
+}
+
+main .s-2 .s-2-content .s-2-list .s-2-list-el li.active img {
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  right: -70px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 main .s-2 .s-2-content .s-2-bigimg {
   width: 34%;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 main .s-2 .s-2-content .s-2-bigimg img {
@@ -665,6 +756,7 @@ main .s-2 .s-2-content .s-2-text p {
 }
 
 main .s-2 .s-2-content .s-2-text p strong {
+  display: block;
   color: #3c2121;
   font-weight: 300;
   letter-spacing: -3.5px;
