@@ -321,8 +321,8 @@ main{
             .s-1-img{
                 width:45%;
                 position:relative;
-                .img-icon{position:absolute;left:-50px;top:30%;animation:fun 2s infinite;}
-                .img-txt{position:absolute;right:0;top:0; animation:beat 1s infinite}
+                .img-icon{position:absolute;left:-50px;top:30%;animation:fun 2s infinite; animation-delay:.8s;}
+                .img-txt{position:absolute;right:0;top:0; animation:beat 1s infinite;}
                 .imgbg{
                     z-index:-1;
                     width:590px;
@@ -333,8 +333,15 @@ main{
                         width:100%;
                         transform-origin:bottom;
                         transform:scale(0.9);
-                        animation:fun 4s infinite;
-                        img{width:100%;}
+                        opacity: 0;
+                        animation:appearanceimg .5s forwards;
+                        animation-delay:.3s;
+                       
+                        img{
+                            width:100%;
+                            animation:fun 4s infinite;
+                            animation-delay:.3s;
+                        }
                     }
                 }
             }
@@ -373,6 +380,49 @@ main{
             bottom:30px;
             z-index:-1
         }
+    }
+    .s-2{
+        width:100%;
+        height:100vh;
+        background-color:rgb(255,249,205);
+        position:relative;
+        overflow:hidden;
+        z-index:-2;
+
+        .s-2-content{
+            @include flex;
+            width:100%;
+            height:100%;
+            margin:0 auto;
+            .s-2-list{
+                width:36%;
+                p{width:40%; margin:0 auto;}
+            }
+            .s-2-bigimg{
+                width:34%;
+                img{width:100%;}
+            }
+            .s-2-text{
+                width:30%;
+                p{
+                    color:#3c2121;
+                    font-size:1.41rem;
+                    font-weight:300;
+                    letter-spacing:-2px;
+                    strong{
+                        color:#3c2121;
+                        font-weight:300;
+                        letter-spacing:-3.5px;
+                        margin-bottom:30px;
+                        font-size:4.1rem;
+                    }
+                }
+            }
+        }
+        .s-2-bg-topleft{}
+        .s-2-bg-topright{}
+        .s-2-bg-bottomleft{}
+        .s-2-bg-bottomright{}
     }
 }
 //footer
@@ -453,6 +503,10 @@ footer{
     0%{transform: rotate(0) scale(0.9);}
     50%{transform: rotate(1deg) scale(0.9);}
     100%{transform: rotate(0) scale(0.9);}
+}
+@keyframes appearanceimg {
+    0%{transform: translateX(-20%) scale(0.9);opacity: 0;}
+    100%{transform: translateX(0%) scale(0.9);opacity: 1;}
 }
 
 @import "_media";
