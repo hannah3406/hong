@@ -338,7 +338,6 @@ main{
                         opacity: 0;
                         animation:appearanceimg 1.25s forwards;
                         animation-delay:0.5s;
-                       
                         img{
                             width:100%;
                             animation:fun 2s infinite;
@@ -405,14 +404,14 @@ main{
             height:100%;
             margin:0 auto;
             .s-2-list{
-                width:36%;
+                width:34%;
                 height:100%;
                 position:relative;
                 .s-2-list-el{               
                     width:35%;
                     position:absolute;
-                    right:20%;
-                    top:30%;
+                    right:18%;
+                    top:37%;
                     transform:translateY(-30%);
                     li{
                         position:relative;
@@ -488,8 +487,9 @@ main{
                 }
             }
             .s-2-bigimg{
-                width:34%;
-                transform:scale(0.9);
+                width:36%;
+                transform:scale(0.8);
+                transform-origin:left;
                 img{
                     width:100%;
                     animation: rotateS2 3s infinite;
@@ -514,10 +514,34 @@ main{
                 }
             }
         }
-        .s-2-bg-topleft{}
-        .s-2-bg-topright{}
-        .s-2-bg-bottomleft{}
-        .s-2-bg-bottomright{}
+        .s-2-bg-topleft{
+            position:absolute;
+            top:-80px; left:200px;
+            transform: rotate(3.5deg) scale(0.5);
+            transform-origin:left top;
+            opacity: 60.5;
+        }
+        .s-2-bg-topright{
+            position:absolute;
+            top:-180px; right:260px;
+            transform: rotate(3.5deg) scale(0.5);
+            transform-origin:right top;
+            opacity: 60.5;
+        }
+        .s-2-bg-bottomleft{
+            position:absolute;
+            bottom:-160px; left:200px;
+            transform: rotate(3.5deg) scale(0.5);
+            transform-origin:left bottom;
+            opacity: 60.5;
+        }
+        .s-2-bg-bottomright{
+            position:absolute;
+            bottom:-100px; right:260px;
+            transform: rotate(3.5deg) scale(0.4);
+            transform-origin:right bottom;
+            opacity: 60.5;
+        }
     }
 }
 //footer
