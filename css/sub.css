@@ -1249,6 +1249,7 @@ main .s-3 {
   position: relative;
   overflow: hidden;
   background-color: #9ad6cb;
+  z-index: -1;
 }
 
 main .s-3 .s-3-photo {
@@ -1286,6 +1287,41 @@ main .s-3 .s-3-photo img:nth-of-type(5) {
 
 main .s-3 .s-3-photo img:nth-of-type(6) {
   left: 87%;
+}
+
+main .s-3 .s-3-text {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 80%;
+}
+
+main .s-3 .s-3-text p {
+  font-size: 40px;
+  color: #3b2120;
+  font-weight: 100;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+main .s-3 .s-3-text p strong {
+  font-size: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+main .s-3 .s-3-text p strong::before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  bottom: -2px;
+  left: 0;
+  -webkit-transition: all 0.5s 0.2s;
+  transition: all 0.5s 0.2s;
+  z-index: -1;
 }
 
 footer .footer .foot_wr {
