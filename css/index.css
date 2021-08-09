@@ -2622,7 +2622,7 @@ main .m-7 .main_bar .en_txt img {
     max-width: 160px;
     height: 40px;
     line-height: 2.5;
-    border: solid 3px #f52334;
+    border: solid 2.5px #f52334;
   }
   main .m-3 {
     vertical-align: middle;
@@ -2744,7 +2744,11 @@ main .m-7 .main_bar .en_txt img {
     padding-top: 20px;
   }
   main .m-4 .news-btn p {
-    max-width: 260px;
+    margin-top: 5px;
+    max-width: 160px;
+    height: 40px;
+    line-height: 2.5;
+    border: solid 2.5px #f52334;
   }
   main .m-6 {
     padding: 100px 0 100px;
@@ -3354,9 +3358,10 @@ main .m-7 .main_bar .en_txt img {
     margin: 0 auto;
   }
   main .m-2 .m-2-box .prd-list .prd-btn li {
-    max-width: 120px;
-    height: 30px;
+    max-width: 160px;
+    height: 35px;
     line-height: 2;
+    border: solid 2.5px #f52334;
   }
   main .m-3 {
     vertical-align: middle;
@@ -3459,9 +3464,10 @@ main .m-7 .main_bar .en_txt img {
   }
   main .m-4 .news-btn p {
     margin-top: 5px;
-    max-width: 120px;
-    height: 30px;
+    max-width: 160px;
+    height: 35px;
     line-height: 2;
+    border: solid 2.5px #f52334;
   }
 }
 

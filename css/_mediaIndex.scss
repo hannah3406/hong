@@ -75,7 +75,7 @@ main{
                         max-width: 160px;
                         height: 40px;
                         line-height: 2.5;
-                        border: solid 3px #f52334;
+                        border: solid 2.5px #f52334;
                     }
                 }
             }
@@ -200,7 +200,11 @@ main{
         }
         .news-btn{
                 p{
-                    max-width: 260px;
+                    margin-top:5px;
+                    max-width: 160px;
+                    height: 40px;
+                    line-height: 2.5;
+                    border: solid 2.5px #f52334;
                 }
         }
     }
@@ -820,9 +824,10 @@ main{
                     margin-top:10px;
                     margin:0 auto;
                     li{
-                        max-width: 120px;
-                        height: 30px;
+                        max-width: 160px;
+                        height: 35px;
                         line-height: 2;
+                        border: solid 2.5px #f52334;
                     }
                 }
             }
@@ -921,9 +926,10 @@ main{
             margin-top:10px;
                 p{
                     margin-top:5px;
-                    max-width: 120px;
-                    height: 30px;
+                    max-width: 160px;
+                    height: 35px;
                     line-height: 2;
+                    border: solid 2.5px #f52334;
                 }
         }
     }
