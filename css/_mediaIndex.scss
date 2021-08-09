@@ -259,6 +259,11 @@ main{
             }
         }
     }
+    @keyframes rot-img2 {
+        0%{transform: rotate(0) scale(0.65);}
+        50%{transform: rotate(-10deg) scale(0.65);}
+        100%{transform: rotate(0) scale(0.65);}
+    }
 }
 
 };
@@ -773,6 +778,11 @@ main{
                 }
             }
         }
+    }
+    @keyframes rot-img2 {
+        0%{transform: rotate(0) scale(0.6);}
+        50%{transform: rotate(-10deg) scale(0.6);}
+        100%{transform: rotate(0) scale(0.6);}
     }
 }
 };
