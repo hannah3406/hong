@@ -3103,8 +3103,8 @@ main .m-7 .main_bar .en_txt img {
     left: 0%;
   }
   main .m-1 .elPage .m-1-page1 .big-img {
-    -webkit-transform: translate(-50%, -50%) scale(0.8);
-            transform: translate(-50%, -50%) scale(0.8);
+    -webkit-transform: translate(-50%, -50%) scale(0.65);
+            transform: translate(-50%, -50%) scale(0.65);
   }
   main .m-1 .elPage .m-1-page1 .butter {
     position: absolute;
@@ -3345,8 +3345,8 @@ main .m-7 .main_bar .en_txt img {
     background: #ffe675;
   }
   main .m-1 .elPage .m-1-page1 .big-img {
-    -webkit-transform: translate(-50%, -50%) scale(0.6);
-            transform: translate(-50%, -50%) scale(0.6);
+    -webkit-transform: translate(-50%, -50%) scale(0.55);
+            transform: translate(-50%, -50%) scale(0.55);
   }
   main .m-1 .elPage .m-1-page1 .butter {
     position: absolute;
@@ -3850,8 +3850,8 @@ main .m-7 .main_bar .en_txt img {
     background: #ffe675;
   }
   main .m-1 .elPage .m-1-page1 .big-img {
-    -webkit-transform: translate(-50%, -50%) scale(0.55);
-            transform: translate(-50%, -50%) scale(0.55);
+    -webkit-transform: translate(-50%, -50%) scale(0.5);
+            transform: translate(-50%, -50%) scale(0.5);
   }
   main .m-1 .elPage .m-1-page1 .butter {
     -webkit-transform: scale(0.4);
