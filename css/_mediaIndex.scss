@@ -41,19 +41,22 @@ main{
         vertical-align: middle;
         position: relative;
         width:$w;
-        height: 100%;
+        height: 100vh;
         padding: 100px 0 100px;
         background: #fff5d9;
         text-align:center;
         .m-2-box{
-            .prd-box{
-                position: relative;
+            .prd-list{
                 max-width: 1200px;
-                margin: 0 auto;
-            }
-            .prd-btn{
-                li{
-                    max-width: 260px;
+                .prd-box{
+                    position: relative;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
+                .prd-btn{
+                    li{
+                        max-width: 260px;
+                    }
                 }
             }
         }
@@ -101,7 +104,7 @@ main{
                             max-width:1200px;
                             margin:0 auto;
                             .item-content{
-                                height:480px;
+                                height:100%;
                                 .photo{
                                     position:relative;
                                     width:100%;
@@ -279,21 +282,24 @@ main{
         .m-2-box{
             .prd-tab{
                 padding: 0 0 5px;}
-            .prd-box{
-                position: relative;
+            .prd-list{
                 max-width: 1150px;
-                margin: 0 auto;
-                transform:scale(0.9);
-
-            }
-            .prd-btn{
-                margin-top:15px;
-                margin:0 auto;
-                li{
-                    max-width: 160px;
-                    height: 40px;
-                    line-height: 2.5;
-                    border: solid 2px #f52334;
+                height:77vh;
+                .prd-box{
+                    position: relative;
+                    max-width: 1150px;
+                    margin: 0 auto;
+                    transform:scale(0.9);
+                }
+                .prd-btn{
+                    margin-top:15px;
+                    margin:0 auto;
+                    li{
+                        max-width: 160px;
+                        height: 40px;
+                        line-height: 2.5;
+                        border: solid 2px #f52334;
+                    }
                 }
             }
         }
@@ -757,33 +763,37 @@ main{
         .m-2-box{
             .prd-tab{
                 padding: 0 0 5px;}
-            .prd-box{
-                position: relative;
+            .prd-list{
                 max-width: 1000px;
-                margin: 0 auto;
-                .prd-box-new{
-                    .goods-list{
-                        .center{
-                            .item-content{
-                                .photo{
-                                    cursor: pointer;
-                                    width:190px;
-                                    height:220px;
-                                    position:relative;
+                height:73vh;
+                .prd-box{
+                    position: relative;
+                    max-width: 1000px;
+                    margin: 0 auto;
+                    .prd-box-new{
+                        .goods-list{
+                            .center{
+                                .item-content{
+                                    .photo{
+                                        cursor: pointer;
+                                        width:190px;
+                                        height:220px;
+                                        position:relative;
+                                    }
                                 }
                             }
                         }
                     }
-                }
 
-            }
-            .prd-btn{
-                margin-top:10px;
-                margin:0 auto;
-                li{
-                    max-width: 120px;
-                    height: 30px;
-                    line-height: 2;
+                }
+                .prd-btn{
+                    margin-top:10px;
+                    margin:0 auto;
+                    li{
+                        max-width: 120px;
+                        height: 30px;
+                        line-height: 2;
+                    }
                 }
             }
         }
