@@ -1,5 +1,21 @@
-//json 파일 연결하기
+// section1 pagenation기능
+const elPage = document.querySelectorAll('.elPage');
+const btnPage = document.querySelectorAll('.m-1-pagination-bullet');
+let idx = 0;
+console.log(elPage);
+for(let i=0;i<btnPage.length;i++){
+    btnPage[i].addEventListener('click',function(){
+        btnPage[idx].classList.remove('active');
+        elPage[idx].classList.remove('on');
 
+        btnPage[i].classList.add('active');
+        elPage[i].classList.add('on');
+
+        idx = i;
+    })
+}
+
+//json 파일 연결하기
 fetch('js/prdList.json')
     .then( (res) => res.json() )
     .then( (data) => callback(data) );
