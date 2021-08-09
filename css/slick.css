@@ -282,4 +282,12 @@ html, body {
     .m-6-center .slick-arrow{
         top:30%;
     }
+}
+    @media(max-width:1400px){
+        .m-3-center .slick-arrow{
+            top:30%;
+        }
+        .m-6-center .slick-arrow{
+            top:50%;
+        }
     }

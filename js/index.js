@@ -118,7 +118,6 @@ fetch('js/prdList.json')
                 </div>
                 `
             });
-
             Slider3.innerHTML = msg3;
 
                 //m-3
@@ -129,27 +128,20 @@ fetch('js/prdList.json')
                     slidesToShow: 3,
                     slidesToScroll: 1
                 });
-                //m-6
-                $(".m-6-center").slick({
-                    dots: false,
-                    infinite: true,
-                    centerMode: false,
-                    slidesToShow: 4,
-                    slidesToScroll: 1
-                });
+
 
         //section6 부분
         //선택자 잡아주기
         const Slider6 = document.querySelector('.m-6-center');
-        let msg6 = '',m6src;
+        let msg6 = '';
 
         data.main6.forEach(function(v,k){
-            m6src = data.main6[k]
+            main6 = data.main6[k]
 
             msg6 += `                    
             <div class="item-content">
             <figure class= "m-6-photo">
-                <img src="${m6src}" alt="m-6" class="m-6-photo_img">
+                <img src="${main6}" alt="m-6" class="m-6-photo_img">
                 <figcaption><p class="insta_over"><a>@hungruichenkorea</a><p></figcaption>
             </figure>
         </div>
@@ -157,6 +149,14 @@ fetch('js/prdList.json')
         });  
         
         Slider6.innerHTML = msg6;
+        //m-6
+        $(".m-6-center").slick({
+            dots: false,
+            infinite: true,
+            centerMode: false,
+            slidesToShow: 4,
+            slidesToScroll: 1
+        });
 
 }
 
