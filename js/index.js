@@ -59,7 +59,7 @@ fetch('js/prdList.json')
         if(window.matchMedia("(min-width: 1400px)").matches){
             $(".center").height( $(".item-content").height(400) )
         } else{
-            $(".center").height( $(".item-content").height(350) )
+            $(".center").height( $(".item-content").height(360) )
         }
 
 
