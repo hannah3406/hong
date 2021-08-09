@@ -1482,7 +1482,7 @@ main .m-2 {
   position: relative;
   width: 100%;
   height: 100vh;
-  padding: 130px 170px 180px;
+  padding: 50px 0;
   background: #fff5d9;
   text-align: center;
 }
@@ -2589,20 +2589,40 @@ main .m-7 .main_bar .en_txt img {
     position: relative;
     width: 100%;
     height: 100vh;
-    padding: 100px 0 100px;
+    padding: 20px 0 20px;
     background: #fff5d9;
     text-align: center;
   }
+  main .m-2 .m-2-box .prd-tab {
+    padding-bottom: 30px !important;
+  }
   main .m-2 .m-2-box .prd-list {
-    max-width: 1200px;
+    max-width: 1150px;
+    height: 77vh;
+    margin-top: 30px;
   }
   main .m-2 .m-2-box .prd-list .prd-box {
     position: relative;
-    max-width: 1200px;
+    max-width: 1150px;
+    margin: 0 auto;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  main .m-2 .m-2-box .prd-list .prd-box .center .item-content .photo {
+    cursor: pointer;
+    width: 190px;
+    height: 220px;
+    position: relative;
+  }
+  main .m-2 .m-2-box .prd-list .prd-btn {
+    margin-top: 15px;
     margin: 0 auto;
   }
   main .m-2 .m-2-box .prd-list .prd-btn li {
-    max-width: 260px;
+    max-width: 160px;
+    height: 40px;
+    line-height: 2.5;
+    border: solid 3px #f52334;
   }
   main .m-3 {
     vertical-align: middle;
@@ -2826,6 +2846,12 @@ main .m-7 .main_bar .en_txt img {
     margin: 0 auto;
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
+  }
+  main .m-2 .m-2-box .prd-list .prd-box .center .item-content .photo {
+    cursor: pointer;
+    width: 190px;
+    height: 220px;
+    position: relative;
   }
   main .m-2 .m-2-box .prd-list .prd-btn {
     margin-top: 15px;

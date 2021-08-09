@@ -56,30 +56,12 @@ fetch('js/prdList.json')
             ]
         });
         
-        if(window.matchMedia("(min-width: 1400px)").matches){
+        if(window.matchMedia("(min-width: 1600px)").matches){
             $(".center").height( $(".item-content").height(400) )
         } else{
             $(".center").height( $(".item-content").height(360) )
         }
 
-
-
-        //m-3
-        $(".m-3-center").slick({
-            dots: false,
-            infinite: true,
-            centerMode: false,
-            slidesToShow: 3,
-            slidesToScroll: 1
-        });
-        //m-6
-        $(".m-6-center").slick({
-            dots: false,
-            infinite: true,
-            centerMode: false,
-            slidesToShow: 4,
-            slidesToScroll: 1
-        });
 
     //section2 의 Tab기능
     const btnLi = document.querySelectorAll('.prd-tab li'); //클릭할 것
@@ -96,6 +78,50 @@ fetch('js/prdList.json')
 
         })
     }
+
+        //section3 부분
+        //prd-list 선택자 잡아주기
+        const Slider3 = document.querySelector('.m-3-center');
+        let msg3 = '',src,m3tit;
+        
+
+            data.main3.forEach(function(v,k){
+                src = data.main3[k].src
+                m3tit = data.main3[k].m3tit
+
+                msg3 += `                    
+                <div class="item-content">
+                    <figure class="photo">
+                        <img src="${src}" alt="m-3" class="photo_img">
+                        <figcaption class="photo_cont">
+                            <p class="photo_tit">${m3tit}</p>
+                            <p class="photo_stit"></p>
+                            <img src="img/arrow_cont.png" alt="m-3">
+                        </figcaption>
+                    </figure>
+                </div>
+                `
+            });
+
+            Slider3.innerHTML = msg3;
+
+                //m-3
+                $(".m-3-center").slick({
+                    dots: false,
+                    infinite: true,
+                    centerMode: false,
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                });
+                //m-6
+                $(".m-6-center").slick({
+                    dots: false,
+                    infinite: true,
+                    centerMode: false,
+                    slidesToShow: 4,
+                    slidesToScroll: 1
+                });
+        
 
 }
 

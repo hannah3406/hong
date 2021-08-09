@@ -188,5 +188,36 @@
                     }
                 ]
         }
-]
+    ],
+    "main3":
+    [
+        {
+            "src":"img/event_oldboardSno852_0.png",
+            "m3tit":"갓군샌 눈꽃소보루 체험단 모집"
+        },
+        {
+            "src":"img/event_oldboardSno869_0.jpg",
+            "m3tit":"홍루이젠 크로플 인증샷 이벤트"
+        },
+        {
+            "src":"img/event_oldboardSno872_0.jpg",
+            "m3tit":"무인매장 신한카드 2천원 청구할인 이벤트"
+        },
+        {
+            "src":"img/event_oldboardSno898_0.jpg",
+            "m3tit":"샌드위치 10,000개 기부 이벤트"
+        },
+        {
+            "src":"img/event_oldboardSno_0.png",
+            "m3tit":"홍루이젠 소비자패널 1기 모집"
+        },
+        {
+            "src":"img/event_oldboardSno795_0.png",
+            "m3tit":"갓군샌 SNS 포토이벤트"
+        },
+        {
+            "src":"img/event_oldboardSno796_0.png",
+            "m3tit":"홍루이젠 TV광고 인증샷 이벤트"
+        }
+    ]
 }

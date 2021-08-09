@@ -42,20 +42,40 @@ main{
         position: relative;
         width:$w;
         height: 100vh;
-        padding: 100px 0 100px;
+        padding: 20px 0 20px;
         background: #fff5d9;
         text-align:center;
         .m-2-box{
+            .prd-tab{
+                padding-bottom:30px !important;}
             .prd-list{
-                max-width: 1200px;
+                max-width: 1150px;
+                height:77vh;
+                margin-top:30px;
                 .prd-box{
                     position: relative;
-                    max-width: 1200px;
+                    max-width: 1150px;
                     margin: 0 auto;
+                    transform:scale(0.9);
+                    .center{
+                        .item-content{
+                            .photo{
+                                cursor: pointer;
+                                width:190px;
+                                height:220px;
+                                position:relative;
+                            }
+                        }
+                    }
                 }
                 .prd-btn{
+                    margin-top:15px;
+                    margin:0 auto;
                     li{
-                        max-width: 260px;
+                        max-width: 160px;
+                        height: 40px;
+                        line-height: 2.5;
+                        border: solid 3px #f52334;
                     }
                 }
             }
@@ -290,6 +310,16 @@ main{
                     max-width: 1150px;
                     margin: 0 auto;
                     transform:scale(0.9);
+                    .center{
+                        .item-content{
+                            .photo{
+                                cursor: pointer;
+                                width:190px;
+                                height:220px;
+                                position:relative;
+                            }
+                        }
+                    }
                 }
                 .prd-btn{
                     margin-top:15px;
