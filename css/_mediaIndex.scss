@@ -326,7 +326,6 @@ main{
                     top:-50%;
                     left:-23%;
                     transform:trnaslate(0,-50%);
-                    background:#ffe675;
                 }
                 .big-img{
                     transform:translate(-50%,-50%) scale(0.55);
@@ -785,6 +784,7 @@ main{
         100%{transform: rotate(0) scale(0.6);}
     }
 }
+
 };
 
 @include media(nth($num,4)){
@@ -836,7 +836,6 @@ main{
                     top:-50%;
                     left:-29%;
                     transform:trnaslate(0,-50%);
-                    background:#ffe675;
                 }
                 .big-img{
                     transform:translate(-50%,-50%) scale(0.5);

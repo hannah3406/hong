@@ -137,7 +137,26 @@ fetch('js/prdList.json')
                     slidesToShow: 4,
                     slidesToScroll: 1
                 });
+
+        //section6 부분
+        //선택자 잡아주기
+        const Slider6 = document.querySelector('.m-6-center');
+        let msg6 = '',m6src;
+
+        data.main6.forEach(function(v,k){
+            m6src = data.main6[k]
+
+            msg6 += `                    
+            <div class="item-content">
+            <figure class= "m-6-photo">
+                <img src="${m6src}" alt="m-6" class="m-6-photo_img">
+                <figcaption><p class="insta_over"><a>@hungruichenkorea</a><p></figcaption>
+            </figure>
+        </div>
+            `
+        });  
         
+        Slider6.innerHTML = msg6;
 
 }
 

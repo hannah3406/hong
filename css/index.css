@@ -1904,8 +1904,8 @@ main .m-1 .elPage.on .m-1-page1 .butter1 {
   right: auto;
   bottom: 80%;
   left: 64%;
-  -webkit-transition-delay: 2s;
-          transition-delay: 2s;
+  -webkit-transition-delay: 3s;
+          transition-delay: 3s;
   -webkit-transition: all 0.5s 0.1s;
   transition: all 0.5s 0.1s;
   -webkit-animation: rot-img1 2s infinite;
@@ -1917,8 +1917,8 @@ main .m-1 .elPage.on .m-1-page1 .butter2 {
   left: auto;
   bottom: 74%;
   right: 59%;
-  -webkit-transition-delay: 2s;
-          transition-delay: 2s;
+  -webkit-transition-delay: 3s;
+          transition-delay: 3s;
   -webkit-transition: all 0.5s 0.2s;
   transition: all 0.5s 0.2s;
   -webkit-animation: rot-img2 3s infinite;
@@ -1930,8 +1930,8 @@ main .m-1 .elPage.on .m-1-page1 .butter3 {
   left: auto;
   top: 73%;
   right: 75%;
-  -webkit-transition-delay: 2s;
-          transition-delay: 2s;
+  -webkit-transition-delay: 3s;
+          transition-delay: 3s;
   -webkit-transition: all 0.5s 0.1s;
   transition: all 0.5s 0.1s;
   -webkit-animation: rot-img1 3s infinite;
@@ -1943,8 +1943,8 @@ main .m-1 .elPage.on .m-1-page1 .butter4 {
   left: auto;
   top: 73%;
   right: 51%;
-  -webkit-transition-delay: 2s;
-          transition-delay: 2s;
+  -webkit-transition-delay: 3s;
+          transition-delay: 3s;
   -webkit-transition: all 0.5s 0.3s;
   transition: all 0.5s 0.3s;
   -webkit-animation: rot-img1 2s infinite;
@@ -1956,8 +1956,8 @@ main .m-1 .elPage.on .m-1-page1 .butter5 {
   right: auto;
   top: 62%;
   left: 58%;
-  -webkit-transition-delay: 2s;
-          transition-delay: 2s;
+  -webkit-transition-delay: 3s;
+          transition-delay: 3s;
   -webkit-transition: all 0.5s 0.2s;
   transition: all 0.5s 0.2s;
   -webkit-animation: rot-img2 3s infinite;
@@ -1969,8 +1969,8 @@ main .m-1 .elPage.on .m-1-page1 .butter6 {
   right: auto;
   top: 73%;
   left: 77%;
-  -webkit-transition-delay: 2s;
-          transition-delay: 2s;
+  -webkit-transition-delay: 3s;
+          transition-delay: 3s;
   -webkit-transition: all 0.5s 0.1s;
   transition: all 0.5s 0.1s;
   -webkit-animation: rot-img2 5s infinite;
@@ -3370,7 +3370,6 @@ main .m-7 .main_bar .en_txt img {
     left: -23%;
     -webkit-transform: trnaslate(0, -50%);
             transform: trnaslate(0, -50%);
-    background: #ffe675;
   }
   main .m-1 .elPage .m-1-page1 .big-img {
     -webkit-transform: translate(-50%, -50%) scale(0.55);
@@ -3903,7 +3902,6 @@ main .m-7 .main_bar .en_txt img {
     left: -29%;
     -webkit-transform: trnaslate(0, -50%);
             transform: trnaslate(0, -50%);
-    background: #ffe675;
   }
   main .m-1 .elPage .m-1-page1 .big-img {
     -webkit-transform: translate(-50%, -50%) scale(0.5);
