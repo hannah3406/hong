@@ -823,31 +823,39 @@ main{margin-top:80px;
                 vertical-align: bottom;
                 width: 60%;
                 height: 566px;
-                .vod_cover{
-                    background: url('../img/vodcover1.jpg') center center no-repeat;
+                .vod_content_all{
                     position: absolute;
                     width: 100%;
                     height: 100%;
                     top: 0;
                     left: 0;
-                    background-size: cover !important;
-                    z-index: 100;
-                    .btn_play{
-                        position: absolute;
-                        width: 128px;
-                        height: 128px;
-                        top: 50%;
-                        left: 50%;
-                        background: url('../img/btn_play.png')no-repeat center center;
-                        background-size: 100%;
-                        transform: translate(-50%, -50%);
-                        outline:none;
-                        border:none;
+                    .vod_cover{
+                        background: url('../img/vodcover1.jpg') center center no-repeat;
+                        width: 100%;
+                        height: 100%;
+                        background-size: cover !important;
+                        z-index: 100;
+                        .btn_play{
+                            position: absolute;
+                            width: 128px;
+                            height: 128px;
+                            top: 50%;
+                            left: 50%;
+                            background: url('../img/btn_play.png')no-repeat center center;
+                            background-size: 100%;
+                            transform: translate(-50%, -50%);
+                            outline:none;
+                            border:none;
+                        }
                     }
-                }
-                iframe{
-                    width: 100% !important;
-                    height: 100% !important;
+                    #ytPlayer{
+                        width: 100% !important;
+                        height: 100% !important;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index:-1;
+                    }
                 }
             }
             .vod_cont{

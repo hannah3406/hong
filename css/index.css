@@ -2126,18 +2126,23 @@ main .m-5 .vod_all .vod_box {
   height: 566px;
 }
 
-main .m-5 .vod_all .vod_box .vod_cover {
-  background: url("../img/vodcover1.jpg") center center no-repeat;
+main .m-5 .vod_all .vod_box .vod_content_all {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
+}
+
+main .m-5 .vod_all .vod_box .vod_content_all .vod_cover {
+  background: url("../img/vodcover1.jpg") center center no-repeat;
+  width: 100%;
+  height: 100%;
   background-size: cover !important;
   z-index: 100;
 }
 
-main .m-5 .vod_all .vod_box .vod_cover .btn_play {
+main .m-5 .vod_all .vod_box .vod_content_all .vod_cover .btn_play {
   position: absolute;
   width: 128px;
   height: 128px;
@@ -2151,9 +2156,13 @@ main .m-5 .vod_all .vod_box .vod_cover .btn_play {
   border: none;
 }
 
-main .m-5 .vod_all .vod_box iframe {
+main .m-5 .vod_all .vod_box .vod_content_all #ytPlayer {
   width: 100% !important;
   height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 main .m-5 .vod_all .vod_cont {
