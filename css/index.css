@@ -1904,12 +1904,12 @@ main .m-1 .elPage.on .m-1-page1 .butter1 {
   right: auto;
   bottom: 80%;
   left: 64%;
-  -webkit-transition-delay: 3s;
-          transition-delay: 3s;
   -webkit-transition: all 0.5s 0.1s;
   transition: all 0.5s 0.1s;
   -webkit-animation: rot-img1 2s infinite;
           animation: rot-img1 2s infinite;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
 }
 
 main .m-1 .elPage.on .m-1-page1 .butter2 {
@@ -1917,12 +1917,12 @@ main .m-1 .elPage.on .m-1-page1 .butter2 {
   left: auto;
   bottom: 74%;
   right: 59%;
-  -webkit-transition-delay: 3s;
-          transition-delay: 3s;
   -webkit-transition: all 0.5s 0.2s;
   transition: all 0.5s 0.2s;
   -webkit-animation: rot-img2 3s infinite;
           animation: rot-img2 3s infinite;
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
 }
 
 main .m-1 .elPage.on .m-1-page1 .butter3 {
@@ -1930,12 +1930,12 @@ main .m-1 .elPage.on .m-1-page1 .butter3 {
   left: auto;
   top: 73%;
   right: 75%;
-  -webkit-transition-delay: 3s;
-          transition-delay: 3s;
   -webkit-transition: all 0.5s 0.1s;
   transition: all 0.5s 0.1s;
   -webkit-animation: rot-img1 3s infinite;
           animation: rot-img1 3s infinite;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
 }
 
 main .m-1 .elPage.on .m-1-page1 .butter4 {
@@ -1943,12 +1943,12 @@ main .m-1 .elPage.on .m-1-page1 .butter4 {
   left: auto;
   top: 73%;
   right: 51%;
-  -webkit-transition-delay: 3s;
-          transition-delay: 3s;
   -webkit-transition: all 0.5s 0.3s;
   transition: all 0.5s 0.3s;
   -webkit-animation: rot-img1 2s infinite;
           animation: rot-img1 2s infinite;
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
 }
 
 main .m-1 .elPage.on .m-1-page1 .butter5 {
@@ -1956,12 +1956,12 @@ main .m-1 .elPage.on .m-1-page1 .butter5 {
   right: auto;
   top: 62%;
   left: 58%;
-  -webkit-transition-delay: 3s;
-          transition-delay: 3s;
   -webkit-transition: all 0.5s 0.2s;
   transition: all 0.5s 0.2s;
   -webkit-animation: rot-img2 3s infinite;
           animation: rot-img2 3s infinite;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
 }
 
 main .m-1 .elPage.on .m-1-page1 .butter6 {
@@ -1969,12 +1969,12 @@ main .m-1 .elPage.on .m-1-page1 .butter6 {
   right: auto;
   top: 73%;
   left: 77%;
-  -webkit-transition-delay: 3s;
-          transition-delay: 3s;
   -webkit-transition: all 0.5s 0.1s;
   transition: all 0.5s 0.1s;
   -webkit-animation: rot-img2 5s infinite;
           animation: rot-img2 5s infinite;
+  -webkit-transition-delay: .6s;
+          transition-delay: .6s;
 }
 
 main .m-2 {
@@ -2563,7 +2563,7 @@ main .m-5 {
   overflow: hidden;
   text-align: center;
   position: relative;
-  z-index: -2;
+  z-index: 1;
 }
 
 main .m-5::before {
@@ -3099,7 +3099,7 @@ main .m-7 .main_bar .en_txt img {
     overflow: hidden;
     text-align: center;
     position: relative;
-    z-index: -2;
+    z-index: 1;
   }
   main .m-5 .vod_all {
     position: relative;
@@ -3450,7 +3450,7 @@ main .m-7 .main_bar .en_txt img {
     overflow: hidden;
     text-align: center;
     position: relative;
-    z-index: -2;
+    z-index: 1;
   }
   main .m-5 .vod_all {
     position: relative;
@@ -3931,7 +3931,7 @@ main .m-7 .main_bar .en_txt img {
     overflow: hidden;
     text-align: center;
     position: relative;
-    z-index: -2;
+    z-index: 1;
   }
   main .m-5::before {
     content: "";
@@ -3991,33 +3991,6 @@ main .m-7 .main_bar .en_txt img {
     height: 420px;
     -webkit-transform-origin: top;
             transform-origin: top;
-  }
-  main .m-5 .vod_all .vod_box .vod_cover {
-    background: url("../img/vodcover1.jpg") center center no-repeat;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-size: cover !important;
-    z-index: 100;
-  }
-  main .m-5 .vod_all .vod_box .vod_cover .btn_play {
-    position: absolute;
-    width: 128px;
-    height: 128px;
-    top: 50%;
-    left: 50%;
-    background: url("../img/btn_play.png") no-repeat center center;
-    background-size: 100%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    outline: none;
-    border: none;
-  }
-  main .m-5 .vod_all .vod_box iframe {
-    width: 100% !important;
-    height: 100% !important;
   }
   main .m-5 .vod_all .vod_cont {
     display: inline-block;

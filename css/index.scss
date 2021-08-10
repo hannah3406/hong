@@ -612,54 +612,55 @@ main{margin-top:80px;
                     right: auto;
                     bottom: 80%;
                     left: 64%;
-                    transition-delay: 3s;
                     transition: all 0.5s 0.1s;
                     animation: rot-img1 2s infinite;
+                    transition-delay:.5s;
                 }
                 .butter2{
                     top: auto;
                     left: auto;
                     bottom: 74%;
                     right: 59%;
-                    transition-delay: 3s;
+
                     transition: all 0.5s 0.2s;
                     animation: rot-img2 3s infinite;
+                    transition-delay:.6s;
                 }
                 .butter3{
                     bottom: auto;
                     left: auto;
                     top: 73%;
                     right: 75%;
-                    transition-delay: 3s;
                     transition: all 0.5s 0.1s;
                     animation: rot-img1 3s infinite;
+                    transition-delay:.5s;
                 }
                 .butter4{
                     bottom: auto;
                     left: auto;
                     top: 73%;
                     right: 51%;
-                    transition-delay: 3s;
                     transition: all 0.5s 0.3s;
                     animation: rot-img1 2s infinite;
+                    transition-delay:.6s;
                 }
                 .butter5{
                     bottom: auto;
                     right: auto;
                     top: 62%;
                     left: 58%;
-                    transition-delay: 3s;
                     transition: all 0.5s 0.2s;
                     animation: rot-img2 3s infinite;
+                    transition-delay:.5s;
                 }
                 .butter6{
                     bottom: auto;
                     right: auto;
                     top: 73%;
                     left: 77%;
-                    transition-delay: 3s;
                     transition: all 0.5s 0.1s;
                     animation: rot-img2 5s infinite;
+                    transition-delay:.6s;
                 }
             }
         }
@@ -1160,7 +1161,7 @@ main{margin-top:80px;
     }
 
 //m-5
-    .m-5{
+    .m-5{ 
         width:$w;
         height:100vh;
         padding: 100px 0;
@@ -1168,7 +1169,7 @@ main{margin-top:80px;
         overflow: hidden;
         text-align:center;
         position:relative;
-        z-index:-2;
+        z-index:1;
         &::before{
             content: "";
             display: block;

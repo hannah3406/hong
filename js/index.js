@@ -160,22 +160,14 @@ fetch('js/prdList.json')
 
 }
 
-
-
-
-
-
 //section5 vod tab기능
 const btnPlay = document.querySelectorAll('.vod_cover');
 const elPlayIcon = document.querySelectorAll('.vod_icon');
-console.log(elPlayIcon)
-console.log(btnPlay)
+
 let idx5 = 0;
 
 elPlayIcon.forEach(function(v,k){
     elPlayIcon[k].addEventListener('click',function(){
-        console.log('성공')
-
         elPlayIcon[idx5].classList.remove('active');
         btnPlay[idx5].classList.remove('active');
 
@@ -184,8 +176,6 @@ elPlayIcon.forEach(function(v,k){
         idx5 = k;
     })
 });
-
-
 
 
 
