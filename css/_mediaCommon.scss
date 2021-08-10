@@ -177,7 +177,7 @@ footer{
 };
 @include media(nth($num,5)){
     *{font-size:13px;}
-    h2{font-size:2.5rem;}
+    h2{font-size:2.2rem;}
     // header
 .head-all{
     height:60px;
@@ -365,7 +365,7 @@ footer{
 
 @include media(nth($num,4)){
     *{font-size:11px;}
-    h2{font-size:2.5rem;}
+    h2{font-size:2.2rem;}
     //m-1
     .head-all{
         height:60px;
