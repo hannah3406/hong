@@ -2,7 +2,6 @@
 const elPage = document.querySelectorAll('.elPage');
 const btnPage = document.querySelectorAll('.m-1-pagination-bullet');
 let idx = 0;
-console.log(elPage);
 for(let i=0;i<btnPage.length;i++){
     btnPage[i].addEventListener('click',function(){
         btnPage[idx].classList.remove('active');
@@ -130,6 +129,7 @@ fetch('js/prdList.json')
                 });
 
 
+
         //section6 부분
         //선택자 잡아주기
         const Slider6 = document.querySelector('.m-6-center');
@@ -159,5 +159,33 @@ fetch('js/prdList.json')
         });
 
 }
+
+
+
+
+
+
+//section5 vod tab기능
+const btnPlay = document.querySelectorAll('.vod_cover');
+const elPlayIcon = document.querySelectorAll('.vod_icon');
+console.log(elPlayIcon)
+console.log(btnPlay)
+let idx5 = 0;
+
+elPlayIcon.forEach(function(v,k){
+    elPlayIcon[k].addEventListener('click',function(){
+        console.log('성공')
+
+        elPlayIcon[idx5].classList.remove('active');
+        btnPlay[idx5].classList.remove('active');
+
+        elPlayIcon[k].classList.add('active');
+        btnPlay[k].classList.add('active');
+        idx5 = k;
+    })
+});
+
+
+
 
 

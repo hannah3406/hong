@@ -2622,12 +2622,12 @@ main .m-5 .vod_all .vod_box {
   position: relative;
   display: inline-block;
   vertical-align: bottom;
-  width: 60%;
+  width: 55%;
   height: 566px;
 }
 
 main .m-5 .vod_all .vod_box .vod_cover {
-  background: url("../img/vodcover1.jpg") center center no-repeat;
+  display: none;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2651,15 +2651,22 @@ main .m-5 .vod_all .vod_box .vod_cover .btn_play {
   border: none;
 }
 
-main .m-5 .vod_all .vod_box iframe {
-  width: 100% !important;
-  height: 100% !important;
+main .m-5 .vod_all .vod_box .vod1 {
+  background: url("../img/vodcover1.jpg") center center no-repeat;
+}
+
+main .m-5 .vod_all .vod_box .vod2 {
+  background: url("../img/vodcover2.jpg") center center no-repeat;
+}
+
+main .m-5 .vod_all .vod_box .vod_cover.active {
+  display: block;
 }
 
 main .m-5 .vod_all .vod_cont {
   display: inline-block;
   vertical-align: bottom;
-  width: 38%;
+  width: 43%;
   padding-left: 3%;
   text-align: left;
 }
@@ -3084,6 +3091,160 @@ main .m-7 .main_bar .en_txt img {
     margin: auto;
     z-index: 5;
   }
+  main .m-5 {
+    width: 100%;
+    height: 100vh;
+    padding: 45px 0;
+    background: #fff5c6;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    z-index: -2;
+  }
+  main .m-5 .vod_all {
+    position: relative;
+    max-width: 1150px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .m-5 .vod_all .vod_box {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 52%;
+    height: 430px;
+  }
+  main .m-5 .vod_all .vod_box .vod_cover {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover !important;
+    z-index: 100;
+  }
+  main .m-5 .vod_all .vod_box .vod_cover .btn_play {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    top: 50%;
+    left: 50%;
+    background: url("../img/btn_play.png") no-repeat center center;
+    background-size: 100%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    outline: none;
+    border: none;
+  }
+  main .m-5 .vod_all .vod_box .vod1 {
+    background: url("../img/vodcover1.jpg") center center no-repeat;
+  }
+  main .m-5 .vod_all .vod_box .vod2 {
+    background: url("../img/vodcover2.jpg") center center no-repeat;
+  }
+  main .m-5 .vod_all .vod_box .vod_cover.active {
+    display: block;
+  }
+  main .m-5 .vod_all .vod_cont {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 47%;
+    padding-left: 3%;
+    text-align: left;
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_text {
+    margin-bottom: 50px;
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: all 0.5s 0.5s;
+    transition: all 0.5s 0.5s;
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box .main_tit {
+    position: relative;
+    display: inline-block;
+    min-width: 220px;
+    font-size: 2.05rem;
+    color: #3C2121;
+    border: 3px solid #3C2121;
+    border-radius: 3px;
+    padding: 12px 12px;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: -1.5px;
+    font-weight: 700;
+    margin-left: 51px;
+    margin-left: 0;
+    margin-right: 51px;
+    padding: 15px 12px;
+    font-size: 1.47rem;
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box .main_tit::before {
+    content: '';
+    position: absolute;
+    left: -51px;
+    top: -3px;
+    width: 45px;
+    height: 100%;
+    border: 3px solid #3C2121;
+    border-radius: 3px;
+    background: url("../img/dot_board.png") no-repeat center center;
+    background-size: contain;
+    left: auto;
+    right: -51px;
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box img {
+    position: absolute;
+    max-width: 100%;
+    height: 0;
+    top: 15px;
+    margin-left: 15px;
+    -webkit-transition: all 0.5s 1s;
+    transition: all 0.5s 1s;
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box img.active {
+    height: 35px;
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_text .vod_tit {
+    display: block;
+    font-size: 2.176rem;
+    color: #000;
+    padding: 30px 0;
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_text .vod_stit {
+    font-size: 0.94rem;
+    color: #444;
+    line-height: 1.6;
+    font-weight: 700;
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_img .vod_icon {
+    font-size: 0;
+    display: inline-block;
+    width: 105px;
+    height: 105px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: url("../img/vodcover1.jpg") center center no-repeat;
+    background-size: cover !important;
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_img .vod_icon:last-child {
+    background: url("../img/vodcover2.jpg") center center no-repeat;
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_img .vod_icon.active {
+    border: 5px solid #f52334;
+  }
 }
 
 @media (max-width: 1600px) {
@@ -3280,6 +3441,160 @@ main .m-7 .main_bar .en_txt img {
     height: 40px;
     line-height: 2.5;
     border: solid 2.5px #f52334;
+  }
+  main .m-5 {
+    width: 100%;
+    height: 100vh;
+    padding: 45px 0;
+    background: #fff5c6;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    z-index: -2;
+  }
+  main .m-5 .vod_all {
+    position: relative;
+    max-width: 1150px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .m-5 .vod_all .vod_box {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 48%;
+    height: 430px;
+  }
+  main .m-5 .vod_all .vod_box .vod_cover {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover !important;
+    z-index: 100;
+  }
+  main .m-5 .vod_all .vod_box .vod_cover .btn_play {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    top: 50%;
+    left: 50%;
+    background: url("../img/btn_play.png") no-repeat center center;
+    background-size: 100%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    outline: none;
+    border: none;
+  }
+  main .m-5 .vod_all .vod_box .vod1 {
+    background: url("../img/vodcover1.jpg") center center no-repeat;
+  }
+  main .m-5 .vod_all .vod_box .vod2 {
+    background: url("../img/vodcover2.jpg") center center no-repeat;
+  }
+  main .m-5 .vod_all .vod_box .vod_cover.active {
+    display: block;
+  }
+  main .m-5 .vod_all .vod_cont {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 47%;
+    padding-left: 3%;
+    text-align: left;
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_text {
+    margin-bottom: 50px;
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: all 0.5s 0.5s;
+    transition: all 0.5s 0.5s;
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box .main_tit {
+    position: relative;
+    display: inline-block;
+    min-width: 220px;
+    font-size: 2.05rem;
+    color: #3C2121;
+    border: 3px solid #3C2121;
+    border-radius: 3px;
+    padding: 12px 12px;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: -1.5px;
+    font-weight: 700;
+    margin-left: 51px;
+    margin-left: 0;
+    margin-right: 51px;
+    padding: 15px 12px;
+    font-size: 1.47rem;
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box .main_tit::before {
+    content: '';
+    position: absolute;
+    left: -51px;
+    top: -3px;
+    width: 45px;
+    height: 100%;
+    border: 3px solid #3C2121;
+    border-radius: 3px;
+    background: url("../img/dot_board.png") no-repeat center center;
+    background-size: contain;
+    left: auto;
+    right: -51px;
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box img {
+    position: absolute;
+    max-width: 100%;
+    height: 0;
+    top: 15px;
+    margin-left: 15px;
+    -webkit-transition: all 0.5s 1s;
+    transition: all 0.5s 1s;
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box img.active {
+    height: 35px;
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_text .vod_tit {
+    display: block;
+    font-size: 2.176rem;
+    color: #000;
+    padding: 30px 0;
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_text .vod_stit {
+    font-size: 0.94rem;
+    color: #444;
+    line-height: 1.6;
+    font-weight: 700;
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_img .vod_icon {
+    font-size: 0;
+    display: inline-block;
+    width: 105px;
+    height: 105px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: url("../img/vodcover1.jpg") center center no-repeat;
+    background-size: cover !important;
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_img .vod_icon:last-child {
+    background: url("../img/vodcover2.jpg") center center no-repeat;
+  }
+  main .m-5 .vod_all .vod_cont .vod_cont_img .vod_icon.active {
+    border: 5px solid #f52334;
   }
   main .m-6 {
     padding: 100px 0 100px;
@@ -3672,10 +3987,8 @@ main .m-7 .main_bar .en_txt img {
     position: relative;
     display: inline-block;
     vertical-align: bottom;
-    width: 60%;
-    height: 430px;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    width: 50%;
+    height: 420px;
     -webkit-transform-origin: top;
             transform-origin: top;
   }
