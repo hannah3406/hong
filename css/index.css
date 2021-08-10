@@ -389,7 +389,7 @@ h2 {
   top: 72px;
   width: 80%;
   margin: 0 auto;
-  background: url(/img/ham_ring.png) no-repeat center center;
+  background: url(../img/ham_ring.png) no-repeat center center;
   background-size: contain;
   height: 42px;
   left: 10%;

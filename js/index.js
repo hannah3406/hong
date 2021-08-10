@@ -194,8 +194,7 @@ $(window).on('mousewheel DOMMouseScroll',function(e){
         $('html,body').stop().animate({
             scrollTop : $(window).height() * num
         },{queue:false})
-    },50);
-   
+    },30);
 })
 
 //scroll event
