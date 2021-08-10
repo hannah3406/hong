@@ -2015,7 +2015,7 @@ main .m-2 .m-2-box h2::after {
 }
 
 main .m-2 .m-2-box .prd-tab {
-  padding: 0 0 40px;
+  padding: 0 0 10px;
 }
 
 main .m-2 .m-2-box .prd-tab li {
@@ -2067,7 +2067,7 @@ main .m-2 .m-2-box .prd-list {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  height: 65vh;
+  height: 72vh;
   max-width: 1400px;
 }
 
