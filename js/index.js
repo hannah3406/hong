@@ -62,7 +62,7 @@ fetch('js/prdList.json')
             slidesToScroll: 1,
             responsive: [
                 {
-                  breakpoint: 1600,
+                  breakpoint: 1800,
                   settings: {
                     slidesToShow: 4,
                     slidesToScroll: 1,
@@ -74,7 +74,7 @@ fetch('js/prdList.json')
         if(window.matchMedia("(min-width: 1600px)").matches){
             $(".center").height( $(".item-content").height(400) )
         } else{
-            $(".center").height( $(".item-content").height(360) )
+            $(".center").height( $(".item-content").height(330) )
         }
 
 
@@ -176,6 +176,27 @@ elPlayIcon.forEach(function(v,k){
         idx5 = k;
     })
 });
+
+//wheel event
+let delta,num=0,move,len=$('.con').length;
+$(window).on('mousewheel DOMMouseScroll',function(e){
+    delta = e.originalEvent.wheelDelta || e.originalEvent.detail * -60;  
+    clearTimeout(move);
+    move = setTimeout(function(){
+        if(delta<0){
+            //down
+            if(num<len-1)num++;
+        }else{
+            if(num>0)num--;
+        }
+
+        console.log(num);
+        $('html,body').stop().animate({
+            scrollTop : $(window).height() * num
+        },{queue:false})
+    },50);
+   
+})
 
 
 

@@ -119,13 +119,13 @@ main{
     }
     .s-2{
         width:100%;
-        height:100vh;
+        height:1000vh;
         position:relative;
         .s-2-box1{
             width:100%;
             height:100%;
             background-color:rgb(255,249,205);
-            position:absolute;
+            position:fixed;
             top:0;left:0;
             overflow:hidden;
             z-index:-2;
@@ -279,7 +279,7 @@ main{
             width:100%;
             height:100%;
             background: rgb(253, 240, 138);
-            position:absolute;
+            position:fixed;
             top:0;left:0;
             overflow:hidden;
             z-index:-2;
@@ -433,7 +433,7 @@ main{
             width:100%;
             height:100%;
             background: #fff9cd;
-            position:absolute;
+            position:fixed;
             top:0;left:0;
             overflow:hidden;
             z-index:-2;

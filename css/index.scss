@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 $w:100%;
-
+html,body{scroll-behavior: smooth; overflow:hidden;}
 //main
 main{margin-top:80px;
 //m-1
@@ -898,7 +898,7 @@ main{margin-top:80px;
         position: relative;
         width:$w;
         height: 100vh;
-        padding: 120px 0 120px;
+        padding: 80px 0;
         background: #ffdcd1;
         text-align:center;
         .m-3-box{
@@ -1007,7 +1007,7 @@ main{margin-top:80px;
         position: relative;
         width:$w;
         height: 100vh;
-        padding: 100px 0;
+        padding: 30px 0;
         background: #ffdcd1;
         text-align:center;
         h2{
@@ -1164,7 +1164,7 @@ main{margin-top:80px;
     .m-5{ 
         width:$w;
         height:100vh;
-        padding: 100px 0;
+        padding: 30px 0;
         background: #fff5c6;
         overflow: hidden;
         text-align:center;
@@ -1191,7 +1191,7 @@ main{margin-top:80px;
             color: #f52334;
             font-weight: 900;
             letter-spacing: -0.5px;
-            margin-bottom: 80px;
+          
             &::after{
                 content: '';
                 position: absolute;
@@ -1493,13 +1493,13 @@ main{margin-top:80px;
                 position: absolute;
                 display: inline-block;
                 vertical-align: middle;
-                // width: 180%;
+                width: 180%;
                 line-height: 212px;
-                // right: -180%;
+                right: -180%;
                 font-size: 5.88rem;
                 color: #f52334;
                 font-weight: 700;
-                // animation: flow 50s linear infinite;
+                animation: flow 50s linear infinite;
                 &:last-child {
                     animation-delay:25s;
                 }

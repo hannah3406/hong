@@ -118,9 +118,9 @@ h2 {
 }
 
 .head-all .head-top .head .menu_list ul li a {
-  font-family: 'Montserrat',sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 1.1rem;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .head-all .head-top .head .menu_tab {
@@ -536,6 +536,9 @@ footer .footer .foot_copy {
 @media (max-width: 1600px) {
   * {
     font-size: 15px;
+  }
+  h2 {
+    font-size: 2.5rem;
   }
   .head-all .head-top .head .logo {
     -webkit-transform: scale(0.8);
@@ -1182,6 +1185,11 @@ footer .footer .foot_copy {
   body {
     background-color: red;
   }
+}
+
+html, body {
+  scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 main {
@@ -2240,7 +2248,7 @@ main .m-3 {
   position: relative;
   width: 100%;
   height: 100vh;
-  padding: 120px 0 120px;
+  padding: 80px 0;
   background: #ffdcd1;
   text-align: center;
 }
@@ -2366,7 +2374,7 @@ main .m-4 {
   position: relative;
   width: 100%;
   height: 100vh;
-  padding: 100px 0;
+  padding: 30px 0;
   background: #ffdcd1;
   text-align: center;
 }
@@ -2558,7 +2566,7 @@ main .m-4 .news-btn p:hover {
 main .m-5 {
   width: 100%;
   height: 100vh;
-  padding: 100px 0;
+  padding: 30px 0;
   background: #fff5c6;
   overflow: hidden;
   text-align: center;
@@ -2588,7 +2596,6 @@ main .m-5 h2 {
   color: #f52334;
   font-weight: 900;
   letter-spacing: -0.5px;
-  margin-bottom: 80px;
 }
 
 main .m-5 h2::after {
@@ -2931,10 +2938,14 @@ main .m-7 .main_bar .en_txt {
   position: absolute;
   display: inline-block;
   vertical-align: middle;
+  width: 180%;
   line-height: 212px;
+  right: -180%;
   font-size: 5.88rem;
   color: #f52334;
   font-weight: 700;
+  -webkit-animation: flow 50s linear infinite;
+          animation: flow 50s linear infinite;
 }
 
 main .m-7 .main_bar .en_txt:last-child {
@@ -3090,6 +3101,65 @@ main .m-7 .main_bar .en_txt img {
     right: 0;
     margin: auto;
     z-index: 5;
+  }
+  main .m-2 {
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 10px 0;
+    background: #fff5d9;
+    text-align: center;
+  }
+  main .m-2 .m-2-box .prd-tab {
+    padding-bottom: 30px !important;
+  }
+  main .m-2 .m-2-box .prd-list {
+    max-width: 1350px;
+    height: 75vh;
+    margin-top: 1;
+  }
+  main .m-2 .m-2-box .prd-list .prd-box {
+    position: relative;
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+  main .m-2 .m-2-box .prd-list .prd-box .center .item-content .photo {
+    cursor: pointer;
+    width: 190px;
+    height: 220px;
+    position: relative;
+  }
+  main .m-2 .m-2-box .prd-list .prd-btn {
+    margin-top: 20px;
+    margin: 0 auto;
+  }
+  main .m-2 .m-2-box .prd-list .prd-btn li {
+    max-width: 180px;
+    height: 50px;
+    line-height: 2.5;
+    border: solid 2px #f52334;
+  }
+  main .m-3 {
+    padding: 50px 0;
+  }
+  main .m-4 {
+    padding: 0;
+    padding-top: 5px;
+  }
+  main .m-4 h2 {
+    margin-bottom: 10px;
+  }
+  main .m-4 .m-4-box {
+    max-width: 1000px;
+    margin: 10px auto;
+    padding-top: 20px;
+  }
+  main .m-4 .news-btn p {
+    max-width: 180px;
+    height: 50px;
+    line-height: 2.5;
+    border: solid 2px #f52334;
   }
   main .m-5 {
     width: 100%;
@@ -3281,7 +3351,7 @@ main .m-7 .main_bar .en_txt img {
     position: relative;
     width: 100%;
     height: 100vh;
-    padding: 20px 0 20px;
+    padding: 10px 0;
     background: #fff5d9;
     text-align: center;
   }
@@ -3290,8 +3360,8 @@ main .m-7 .main_bar .en_txt img {
   }
   main .m-2 .m-2-box .prd-list {
     max-width: 1150px;
-    height: 77vh;
-    margin-top: 30px;
+    height: 73vh;
+    margin-top: 0px;
   }
   main .m-2 .m-2-box .prd-list .prd-box {
     position: relative;
@@ -3299,29 +3369,31 @@ main .m-7 .main_bar .en_txt img {
     margin: 0 auto;
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
+    -webkit-transform-origin: top;
+            transform-origin: top;
   }
   main .m-2 .m-2-box .prd-list .prd-box .center .item-content .photo {
     cursor: pointer;
-    width: 190px;
-    height: 220px;
+    width: 170px;
+    height: 200px;
     position: relative;
   }
   main .m-2 .m-2-box .prd-list .prd-btn {
-    margin-top: 15px;
+    margin-top: 10px;
     margin: 0 auto;
   }
   main .m-2 .m-2-box .prd-list .prd-btn li {
-    max-width: 160px;
+    max-width: 180px;
     height: 40px;
-    line-height: 2.5;
-    border: solid 2.5px #f52334;
+    line-height: 2.4;
+    border: solid 1.5px #f52334;
   }
   main .m-3 {
     vertical-align: middle;
     position: relative;
     width: 100%;
     height: 100%;
-    padding: 100px 0 100px;
+    padding: 40px 0;
     background: #ffdcd1;
     text-align: center;
   }
@@ -3428,29 +3500,44 @@ main .m-7 .main_bar .en_txt img {
     opacity: 1;
   }
   main .m-4 {
-    padding: 70px 0;
+    height: 100vh;
+    padding: 0;
+    padding-top: 50px;
+  }
+  main .m-4 h2 {
+    margin-bottom: 5px;
   }
   main .m-4 .m-4-box {
     max-width: 1000px;
     margin: 10px auto;
     padding-top: 20px;
+    height: 70%;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    -webkit-transform-origin: top;
+            transform-origin: top;
   }
   main .m-4 .news-btn p {
     margin-top: 5px;
-    max-width: 160px;
+    max-width: 180px;
     height: 40px;
-    line-height: 2.5;
-    border: solid 2.5px #f52334;
+    line-height: 2.4;
+    border: solid 2px #f52334;
   }
   main .m-5 {
     width: 100%;
     height: 100vh;
-    padding: 45px 0;
-    background: #fff5c6;
-    overflow: hidden;
-    text-align: center;
-    position: relative;
-    z-index: 1;
+    padding: 0;
+    padding-top: 60px;
+  }
+  main .m-5::before {
+    width: 1100px;
+    height: 1100px;
+    top: -58%;
+    left: -11%;
+  }
+  main .m-5 h2 {
+    margin-bottom: 40px;
   }
   main .m-5 .vod_all {
     position: relative;
@@ -3706,7 +3793,7 @@ main .m-7 .main_bar .en_txt img {
     position: relative;
     width: 100%;
     height: 100vh;
-    padding: 10px 0;
+    padding: 0;
     background: #fff5d9;
     text-align: center;
   }
@@ -3861,6 +3948,7 @@ main .m-7 .main_bar .en_txt img {
     max-width: 1000px;
     margin: 0px auto;
     padding-top: 10px;
+    height: 60%;
   }
   main .m-4 .m-4-box .m-4-cont {
     display: -webkit-box;
@@ -4239,7 +4327,7 @@ main .m-7 .main_bar .en_txt img {
     position: relative;
     width: 100%;
     height: 100vh;
-    padding: 60px 0 60px;
+    padding: 20px 0;
     background: #ffdcd1;
     text-align: center;
   }
@@ -4251,7 +4339,7 @@ main .m-7 .main_bar .en_txt img {
     color: #f52334;
     font-weight: 900;
     letter-spacing: -0.5px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   main .m-3 .m-3-box h2::after {
     content: '';
@@ -4269,76 +4357,30 @@ main .m-7 .main_bar .en_txt img {
     max-width: 900px;
   }
   main .m-4 {
-    padding: 10px 0;
-  }
-  main .m-4 h2 {
-    margin-bottom: 15px;
-  }
-  main .m-4 .m-4-box {
-    max-width: 900px;
-    margin: 0px auto;
+    padding: 0;
     padding-top: 10px;
   }
-  main .m-4 .m-4-box .m-4-cont {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 15px 10px;
-    border-bottom: 2px solid #000;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-    width: 100%;
-    font-size: 0;
-  }
-  main .m-4 .m-4-box .m-4-cont .news_img {
-    width: 28%;
-  }
-  main .m-4 .m-4-box .m-4-cont .news_img img {
-    width: 100%;
-  }
-  main .m-4 .m-4-box .m-4-cont .news_cont {
-    width: 67%;
-    padding-left: 15px;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: left;
-  }
-  main .m-4 .m-4-box .m-4-cont .news_cont .noti_sub {
+  main .m-4 h2 {
     margin-bottom: 10px;
-    font-size: 1.17rem;
-    color: #3c2121;
-    letter-spacing: -1px;
-    font-weight: 600;
   }
-  main .m-4 .m-4-box .m-4-cont .news_cont .noti_sub span {
-    display: block;
-    width: 40px;
-    height: 20px;
-    line-height: 2;
-  }
-  main .m-4 .m-4-box .m-4-cont .news_cont .noti_regi {
-    font-family: 'Noto Sans KR', sans-serif;
-  }
-  main .m-4 .m-4-box .m-4-cont .news_cont .noti_more {
-    margin-top: 8px;
-    font-size: 0.94rem;
+  main .m-4 .m-4-box {
+    max-width: 1000px;
+    margin: 0px auto;
+    padding-top: 10px;
+    height: 50%;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   main .m-4 .news-btn {
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 15px;
   }
   main .m-4 .news-btn p {
     margin-top: 5px;
     max-width: 160px;
-    height: 35px;
-    line-height: 2;
-    border: solid 2.5px #f52334;
+    height: 40px;
+    line-height: 2.5;
+    border: solid 2px #f52334;
   }
 }
 

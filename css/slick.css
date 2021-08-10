@@ -280,7 +280,7 @@ html, body {
         top:30%;
     }
     .m-6-center .slick-arrow{
-        top:30%;
+        top:50%;
     }
 }
     @media(max-width:1400px){
