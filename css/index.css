@@ -2688,8 +2688,8 @@ main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box {
   display: inline-block;
   -webkit-transition: all 0.5s 0.5s;
   transition: all 0.5s 0.5s;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
 }
 
 main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box .main_tit {
@@ -2728,6 +2728,7 @@ main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box .main_tit::before {
 }
 
 main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box img {
+  opacity: 0;
   position: absolute;
   max-width: 0;
   height: 0;
@@ -2742,17 +2743,18 @@ main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box.active {
   transition: all 0.5s 0.5s;
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box.active img {
+  opacity: 1;
   max-width: 100%;
   height: 35px;
   -webkit-transition: all 0.5s 1s;
   transition: all 0.5s 1s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 main .m-5 .vod_all .vod_cont .vod_cont_text .vod_tit {
@@ -3847,7 +3849,7 @@ main .m-7 .main_bar .en_txt img {
     position: relative;
     width: 100%;
     height: 100vh;
-    padding: 60px 0 60px;
+    padding: 50px 0;
     background: #ffdcd1;
     text-align: center;
   }
@@ -3859,7 +3861,7 @@ main .m-7 .main_bar .en_txt img {
     color: #f52334;
     font-weight: 900;
     letter-spacing: -0.5px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
   }
   main .m-3 .m-3-box h2::after {
     content: '';
@@ -4194,7 +4196,7 @@ main .m-7 .main_bar .en_txt img {
   }
   main .m-7 {
     width: 100%;
-    height: 180px;
+    height: 160px;
     background: #9ad6cb;
   }
   main .m-7 .main_bar {
@@ -4204,7 +4206,7 @@ main .m-7 .main_bar .en_txt img {
     position: absolute;
     display: inline-block;
     vertical-align: middle;
-    line-height: 2.6;
+    line-height: 2.4;
     font-size: 4.6rem;
     color: #f52334;
     font-weight: 700;
