@@ -197,7 +197,6 @@ $(window).on('mousewheel DOMMouseScroll',function(e){
     },30);
 })
 
-//scroll event
 //section5 스크롤 내리면 opacity
 window.addEventListener('scroll',function(){
     const elM = document.querySelector('.elM');
@@ -223,7 +222,7 @@ PopupClose.addEventListener('click',function(){
     if(check.checked){
         let date = new Date();
         date.setMinutes(date.getMinutes() + 5);
-        document.cookie = `lypopup=mainPopup;expires=${date.toUTCString}`;
+        document.cookie = `lypopup=mainPopup;Expires=${date.toUTCString()}`;
     }
     PopupLayer.style.display='none';
 })

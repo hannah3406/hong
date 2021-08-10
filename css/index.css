@@ -2987,6 +2987,8 @@ main #PopupLayer {
   background: #fff;
   border: 1px solid #e0e0e0 !important;
   padding-top: 38px;
+  -webkit-animation: fixeditems 1s forwards;
+          animation: fixeditems 1s forwards;
 }
 
 main #PopupLayer .content {
@@ -3022,13 +3024,66 @@ main #PopupLayer #PopupClose {
   background: url("../img/layer-close.png") no-repeat left top;
 }
 
-main p {
+main #PopupLayer p {
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 300;
 }
 
-main p #check {
+main #PopupLayer p #check {
   margin-left: 15px;
+}
+
+main .quick1 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  width: 60px;
+  height: 120px;
+}
+
+main .quick1 .quick1_box {
+  width: 100%;
+  height: 100%;
+}
+
+main .quick1 .quick1_box .quick1_box_el {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 57px;
+  height: 57px;
+  background: #f52334;
+  border-radius: 100%;
+  text-align: center;
+}
+
+main .quick1 .quick1_box .quick1_box_el img {
+  width: 19px;
+  margin-bottom: 3px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+main .quick1 .quick1_box .quick1_box_el .quick1_text {
+  color: #fff !important;
+}
+
+main .quick1 .quick1_box .quick1_box_el .first-child {
+  margin-bottom: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .quick1 .quick1_box .quick1_box_el .last-child {
+  margin-bottom: 25px;
+  -webkit-transition: 0.5s 0.1s;
+  transition: 0.5s 0.1s;
 }
 
 @-webkit-keyframes rot-img1 {
@@ -3088,6 +3143,42 @@ main p #check {
   100% {
     -webkit-transform: rotate(0);
             transform: rotate(0);
+  }
+}
+
+@-webkit-keyframes fixeditems {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fixeditems {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
   }
 }
 
