@@ -1910,8 +1910,8 @@ main .m-1 .elPage.on .m-1-page1 .butter {
 main .m-1 .elPage.on .m-1-page1 .butter1 {
   top: auto;
   right: auto;
-  bottom: 80%;
-  left: 64%;
+  bottom: 75%;
+  left: 55%;
   -webkit-transition: all 0.5s 0.1s;
   transition: all 0.5s 0.1s;
   -webkit-animation: rot-img1 2s infinite;
@@ -1924,7 +1924,7 @@ main .m-1 .elPage.on .m-1-page1 .butter2 {
   top: auto;
   left: auto;
   bottom: 74%;
-  right: 59%;
+  right: 55%;
   -webkit-transition: all 0.5s 0.2s;
   transition: all 0.5s 0.2s;
   -webkit-animation: rot-img2 3s infinite;
@@ -1936,7 +1936,7 @@ main .m-1 .elPage.on .m-1-page1 .butter2 {
 main .m-1 .elPage.on .m-1-page1 .butter3 {
   bottom: auto;
   left: auto;
-  top: 73%;
+  top: 74%;
   right: 75%;
   -webkit-transition: all 0.5s 0.1s;
   transition: all 0.5s 0.1s;
@@ -1975,7 +1975,7 @@ main .m-1 .elPage.on .m-1-page1 .butter5 {
 main .m-1 .elPage.on .m-1-page1 .butter6 {
   bottom: auto;
   right: auto;
-  top: 73%;
+  top: 60%;
   left: 77%;
   -webkit-transition: all 0.5s 0.1s;
   transition: all 0.5s 0.1s;
