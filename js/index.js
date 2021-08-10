@@ -185,7 +185,7 @@ $(window).on('mousewheel DOMMouseScroll',function(e){
     move = setTimeout(function(){
         if(delta<0){
             //down
-            if(num<len-1)num++;
+            if(num<len)num++;
         }else{
             if(num>0)num--;
         }
@@ -196,6 +196,22 @@ $(window).on('mousewheel DOMMouseScroll',function(e){
         },{queue:false})
     },50);
    
+})
+
+//scroll event
+//section5 스크롤 내리면 opacity
+window.addEventListener('scroll',function(){
+    const elM = document.querySelector('.elM');
+
+    let elHei = elM.offsetTop;
+    let winHei = window.innerHeight;
+
+    if(elHei-winHei <= window.scrollY){
+        titBox.classList.add('active');
+    }else{
+        titBox.classList.remove('active');
+    }
+
 })
 
 

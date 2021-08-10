@@ -1916,8 +1916,8 @@ main .m-1 .elPage.on .m-1-page1 .butter1 {
   transition: all 0.5s 0.1s;
   -webkit-animation: rot-img1 2s infinite;
           animation: rot-img1 2s infinite;
-  -webkit-transition-delay: .5s;
-          transition-delay: .5s;
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
 }
 
 main .m-1 .elPage.on .m-1-page1 .butter2 {
@@ -1929,8 +1929,8 @@ main .m-1 .elPage.on .m-1-page1 .butter2 {
   transition: all 0.5s 0.2s;
   -webkit-animation: rot-img2 3s infinite;
           animation: rot-img2 3s infinite;
-  -webkit-transition-delay: .6s;
-          transition-delay: .6s;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
 }
 
 main .m-1 .elPage.on .m-1-page1 .butter3 {
@@ -1942,8 +1942,8 @@ main .m-1 .elPage.on .m-1-page1 .butter3 {
   transition: all 0.5s 0.1s;
   -webkit-animation: rot-img1 3s infinite;
           animation: rot-img1 3s infinite;
-  -webkit-transition-delay: .5s;
-          transition-delay: .5s;
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
 }
 
 main .m-1 .elPage.on .m-1-page1 .butter4 {
@@ -1955,8 +1955,8 @@ main .m-1 .elPage.on .m-1-page1 .butter4 {
   transition: all 0.5s 0.3s;
   -webkit-animation: rot-img1 2s infinite;
           animation: rot-img1 2s infinite;
-  -webkit-transition-delay: .6s;
-          transition-delay: .6s;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
 }
 
 main .m-1 .elPage.on .m-1-page1 .butter5 {
@@ -1968,8 +1968,8 @@ main .m-1 .elPage.on .m-1-page1 .butter5 {
   transition: all 0.5s 0.2s;
   -webkit-animation: rot-img2 3s infinite;
           animation: rot-img2 3s infinite;
-  -webkit-transition-delay: .5s;
-          transition-delay: .5s;
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
 }
 
 main .m-1 .elPage.on .m-1-page1 .butter6 {
@@ -1981,8 +1981,8 @@ main .m-1 .elPage.on .m-1-page1 .butter6 {
   transition: all 0.5s 0.1s;
   -webkit-animation: rot-img2 5s infinite;
           animation: rot-img2 5s infinite;
-  -webkit-transition-delay: .6s;
-          transition-delay: .6s;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
 }
 
 main .m-2 {
@@ -2596,6 +2596,7 @@ main .m-5 h2 {
   color: #f52334;
   font-weight: 900;
   letter-spacing: -0.5px;
+  margin-bottom: 50px;
 }
 
 main .m-5 h2::after {
@@ -2687,8 +2688,8 @@ main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box {
   display: inline-block;
   -webkit-transition: all 0.5s 0.5s;
   transition: all 0.5s 0.5s;
-  -webkit-transform: rotate(-5deg);
-          transform: rotate(-5deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box .main_tit {
@@ -2728,7 +2729,7 @@ main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box .main_tit::before {
 
 main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box img {
   position: absolute;
-  max-width: 100%;
+  max-width: 0;
   height: 0;
   top: 15px;
   margin-left: 15px;
@@ -2736,8 +2737,22 @@ main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box img {
   transition: all 0.5s 1s;
 }
 
-main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box img.active {
+main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box.active {
+  -webkit-transition: all 0.5s 0.5s;
+  transition: all 0.5s 0.5s;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+main .m-5 .vod_all .vod_cont .vod_cont_text .tit_box.active img {
+  max-width: 100%;
   height: 35px;
+  -webkit-transition: all 0.5s 1s;
+  transition: all 0.5s 1s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 main .m-5 .vod_all .vod_cont .vod_cont_text .vod_tit {
