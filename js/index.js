@@ -202,7 +202,7 @@ $(window).on('mousewheel DOMMouseScroll',function(e){
         $('html,body').stop().animate({
             scrollTop : $(window).height() * num
         },{queue:false})
-    },30);
+    },100);
 })
 
 //section5 스크롤 내리면 opacity
