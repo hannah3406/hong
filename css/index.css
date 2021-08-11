@@ -3075,7 +3075,7 @@ main #PopupLayer p #check {
 main .quick {
   position: fixed;
   right: 15px;
-  bottom: 80px;
+  bottom: 40px;
   width: 60px;
   height: 130px;
   z-index: 2;
