@@ -1216,14 +1216,12 @@ main{margin-top:80px;
                 width: 55%;
                 height: 566px;
                 .vod_cover{
-                    display:none;
                     position: absolute;
                     width: 100%;
                     height: 100%;
                     top: 0;
                     left: 0;
-                    background-size: cover !important;
-                    z-index: 100;
+                    // z-index: 10;
                     .btn_play{
                         position: absolute;
                         width: 128px;
@@ -1235,13 +1233,47 @@ main{margin-top:80px;
                         transform: translate(-50%, -50%);
                         outline:none;
                         border:none;
+                        z-index: 11;
+                        display:none;
+                    }
+                    .btn_play.active{display:block;}
+                    .vod1,.vod2{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        display:none;
+                        z-index: 10;
+                    }
+                    .vod1.active,.vod2.active{
+                        display:block;
                     }
                 }
-                .vod1{
-                    background: url('../img/vodcover1.jpg') center center no-repeat;
+                .vod_player{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    .Vodplayer{
+                        width: 100%;
+                        height: 100%;
+                        display:none;
+                        #Player0,#Player1{
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+                    .Vodplayer.active{
+                        display:block;
+                    }
                 }
-                .vod2{
-                    background: url('../img/vodcover2.jpg') center center no-repeat;
+                .vod_player.active{
+                    display:block;
                 }
                 .vod_cover.active{
                     display:block;
@@ -1512,7 +1544,7 @@ main{margin-top:80px;
                 font-size: 5.88rem;
                 color: #f52334;
                 font-weight: 700;
-                animation: flow 50s linear infinite;
+                // animation: flow 50s linear infinite;
                 &:last-child {
                     animation-delay:25s;
                 }

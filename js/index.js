@@ -161,8 +161,9 @@ fetch('js/prdList.json')
 }
 
 //section5 vod tab기능
-const btnPlay = document.querySelectorAll('.vod_cover');
+const btnPlay = document.querySelectorAll('.vod_cover img');
 const elPlayIcon = document.querySelectorAll('.vod_icon');
+const btnPlay1 = document.querySelectorAll('.btn_play');
 
 let idx5 = 0;
 
@@ -170,9 +171,11 @@ elPlayIcon.forEach(function(v,k){
     elPlayIcon[k].addEventListener('click',function(){
         elPlayIcon[idx5].classList.remove('active');
         btnPlay[idx5].classList.remove('active');
+        btnPlay1[idx5].classList.remove('active');
 
         elPlayIcon[k].classList.add('active');
         btnPlay[k].classList.add('active');
+        btnPlay1[k].classList.add('active');
         idx5 = k;
     })
 });
@@ -190,7 +193,6 @@ $(window).on('mousewheel DOMMouseScroll',function(e){
             if(num>0)num--;
         }
 
-        console.log(num);
         $('html,body').stop().animate({
             scrollTop : $(window).height() * num
         },{queue:false})
@@ -227,3 +229,69 @@ PopupClose.addEventListener('click',function(){
     PopupLayer.style.display='none';
 })
 
+//section5 youtube api
+const vodPlayer = document.querySelector('.vod_player');
+let vodUrl = ['S82wJ0DGFGI','VTTkU4SReM8'];
+let objVod = [];
+
+    // var elDiv = document.createElement('div');
+    // elDiv.setAttribute('id','Player'+i)
+    // vodPlayer.append(elDiv);
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+
+    var player;
+    function onYouTubeIframeAPIReady() {
+        for(let i=0;i<vodUrl.length;i++){
+            player = new YT.Player('Player'+i, {
+                height: '566',
+                width: '768',
+                videoId: vodUrl[i],
+                events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+                }
+            });
+            objVod.push(player);
+        }
+    }
+    // 4. The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+    event.target.pauseVideo();
+    }
+
+    var done = false;
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+            // setTimeout(stopVideo, 6000);
+            done = true;
+        }
+
+    }
+    function stopVideo() {
+        player.stopVideo();
+    }
+
+
+let idxVdo = 0;
+const vodPlayer1 = document.querySelectorAll('.Vodplayer');
+
+for(let i=0; i<btnPlay1.length;i++){
+    btnPlay1[i].addEventListener('click',function(){
+        vodPlayer1[idxVdo].classList.remove('active');
+        objVod[idxVdo].stopVideo();
+
+        objVod[i].playVideo();
+        vodPlayer1[i].classList.add('active'); //유튜브
+        btnPlay[i].classList.remove('active'); //커버
+        btnPlay1[i].classList.remove('active'); //버튼
+
+        idxVdo = i;
+    });
+}
