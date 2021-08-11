@@ -4447,6 +4447,7 @@ main .quick .quick_locate {
             transform-origin: right top;
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
+    top: 60px;
   }
   main .quick {
     -webkit-transform: scale(0.7);
