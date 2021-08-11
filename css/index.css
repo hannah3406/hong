@@ -3496,44 +3496,52 @@ main .quick .quick_locate {
             animation: fixeditems 1s forwards;
     -webkit-transform-origin: right top;
             transform-origin: right top;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   main .quick {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  main .quick_locate {
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+  main .quick_shop {
+    -webkit-transform-origin: top;
+            transform-origin: top;
   }
   @-webkit-keyframes fixeditems {
     0% {
-      -webkit-transform: translateX(100%) scale(0.8);
-              transform: translateX(100%) scale(0.8);
+      -webkit-transform: translateX(100%) scale(0.9);
+              transform: translateX(100%) scale(0.9);
       opacity: 0;
     }
     50% {
-      -webkit-transform: translateX(100%) scale(0.8);
-              transform: translateX(100%) scale(0.8);
+      -webkit-transform: translateX(100%) scale(0.9);
+              transform: translateX(100%) scale(0.9);
       opacity: 0;
     }
     100% {
-      -webkit-transform: translateX(0%) scale(0.8);
-              transform: translateX(0%) scale(0.8);
+      -webkit-transform: translateX(0%) scale(0.9);
+              transform: translateX(0%) scale(0.9);
       opacity: 1;
     }
   }
   @keyframes fixeditems {
     0% {
-      -webkit-transform: translateX(100%) scale(0.8);
-              transform: translateX(100%) scale(0.8);
+      -webkit-transform: translateX(100%) scale(0.9);
+              transform: translateX(100%) scale(0.9);
       opacity: 0;
     }
     50% {
-      -webkit-transform: translateX(100%) scale(0.8);
-              transform: translateX(100%) scale(0.8);
+      -webkit-transform: translateX(100%) scale(0.9);
+              transform: translateX(100%) scale(0.9);
       opacity: 0;
     }
     100% {
-      -webkit-transform: translateX(0%) scale(0.8);
-              transform: translateX(0%) scale(0.8);
+      -webkit-transform: translateX(0%) scale(0.9);
+              transform: translateX(0%) scale(0.9);
       opacity: 1;
     }
   }
@@ -3884,44 +3892,48 @@ main .quick .quick_locate {
             animation: fixeditems 1s forwards;
     -webkit-transform-origin: right top;
             transform-origin: right top;
-    -webkit-transform: scale(0.75);
-            transform: scale(0.75);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
-  main .quick {
-    -webkit-transform: scale(0.75);
-            transform: scale(0.75);
+  main .quick .quick_locate {
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+  }
+  main .quick .quick_shop {
+    -webkit-transform-origin: top;
+            transform-origin: top;
   }
   @-webkit-keyframes fixeditems {
     0% {
-      -webkit-transform: translateX(100%) scale(0.75);
-              transform: translateX(100%) scale(0.75);
+      -webkit-transform: translateX(100%) scale(0.8);
+              transform: translateX(100%) scale(0.8);
       opacity: 0;
     }
     50% {
-      -webkit-transform: translateX(100%) scale(0.75);
-              transform: translateX(100%) scale(0.75);
+      -webkit-transform: translateX(100%) scale(0.8);
+              transform: translateX(100%) scale(0.8);
       opacity: 0;
     }
     100% {
-      -webkit-transform: translateX(0%) scale(0.75);
-              transform: translateX(0%) scale(0.75);
+      -webkit-transform: translateX(0%) scale(0.8);
+              transform: translateX(0%) scale(0.8);
       opacity: 1;
     }
   }
   @keyframes fixeditems {
     0% {
-      -webkit-transform: translateX(100%) scale(0.75);
-              transform: translateX(100%) scale(0.75);
+      -webkit-transform: translateX(100%) scale(0.8);
+              transform: translateX(100%) scale(0.8);
       opacity: 0;
     }
     50% {
-      -webkit-transform: translateX(100%) scale(0.75);
-              transform: translateX(100%) scale(0.75);
+      -webkit-transform: translateX(100%) scale(0.8);
+              transform: translateX(100%) scale(0.8);
       opacity: 0;
     }
     100% {
-      -webkit-transform: translateX(0%) scale(0.75);
-              transform: translateX(0%) scale(0.75);
+      -webkit-transform: translateX(0%) scale(0.8);
+              transform: translateX(0%) scale(0.8);
       opacity: 1;
     }
   }
@@ -4443,13 +4455,9 @@ main .quick .quick_locate {
   main #PopupLayer {
     -webkit-animation: fixeditems 1s forwards;
             animation: fixeditems 1s forwards;
-    -webkit-transform-origin: right top;
-            transform-origin: right top;
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
     top: 60px;
   }
-  main .quick {
+  main .quick .quick_locate {
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
   }

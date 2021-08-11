@@ -228,15 +228,21 @@ main{
         #PopupLayer{
             animation:fixeditems 1s forwards;
             transform-origin:right top;
-            transform:scale(0.8);
+            transform:scale(0.9);
         }
         .quick{
-            transform:scale(0.8);
+            transform:scale(0.9);
+        }
+        .quick_locate{
+            transform-origin:bottom;
+        }
+        .quick_shop{
+            transform-origin:top;
         }
         @keyframes fixeditems {
-            0%{transform: translateX(100%) scale(0.8); opacity:0;}
-            50%{transform: translateX(100%) scale(0.8); opacity:0;}
-            100%{transform: translateX(0%) scale(0.8); opacity:1;}
+            0%{transform: translateX(100%) scale(0.9); opacity:0;}
+            50%{transform: translateX(100%) scale(0.9); opacity:0;}
+            100%{transform: translateX(0%) scale(0.9); opacity:1;}
         }
     } 
 }
@@ -587,15 +593,20 @@ main{
     #PopupLayer{
         animation:fixeditems 1s forwards;
         transform-origin:right top;
-        transform:scale(0.75);
+        transform:scale(0.8);
         }
         .quick{
-            transform:scale(0.75);
+            .quick_locate{
+                transform-origin:bottom;
+            }
+            .quick_shop{
+                transform-origin:top;
+            }
         }
         @keyframes fixeditems {
-            0%{transform: translateX(100%) scale(0.75); opacity:0;}
-            50%{transform: translateX(100%) scale(0.75); opacity:0;}
-            100%{transform: translateX(0%) scale(0.75); opacity:1;}
+            0%{transform: translateX(100%) scale(0.8); opacity:0;}
+            50%{transform: translateX(100%) scale(0.8); opacity:0;}
+            100%{transform: translateX(0%) scale(0.8); opacity:1;}
         }
     @keyframes rot-img2 {
         0%{transform: rotate(0) scale(0.65);}
@@ -1092,12 +1103,15 @@ main{
     //popup
     #PopupLayer{
     animation:fixeditems 1s forwards;
-    transform-origin:right top;
-    transform:scale(0.7);
     top:60px;
     }
     .quick{
-        transform:scale(0.7);
+        .quick_locate{
+            transform:scale(0.7);
+        }
+        .quick_shop{
+
+        }
     }
     @keyframes fixeditems {
         0%{transform: translateX(100%) scale(0.7); opacity:0;}
