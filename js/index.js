@@ -1,3 +1,8 @@
+//움직이기
+// $(function() {
+// 	$( "#PopupLayer" ).draggable();
+// });
+
 // section1 pagenation기능
 const elPage = document.querySelectorAll('.elPage');
 const btnPage = document.querySelectorAll('.m-1-pagination-bullet');
@@ -193,6 +198,7 @@ $(window).on('mousewheel DOMMouseScroll',function(e){
             if(num>0)num--;
         }
 
+        console.log(num);
         $('html,body').stop().animate({
             scrollTop : $(window).height() * num
         },{queue:false})
@@ -228,6 +234,7 @@ PopupClose.addEventListener('click',function(){
     }
     PopupLayer.style.display='none';
 })
+
 
 //section5 youtube api
 const vodPlayer = document.querySelector('.vod_player');

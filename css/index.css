@@ -2993,6 +2993,15 @@ main .m-7 .main_bar {
 main .m-7 .main_bar .en_txt {
   position: absolute;
   display: inline-block;
+  vertical-align: middle;
+  width: 180%;
+  line-height: 212px;
+  right: -180%;
+  font-size: 5.88rem;
+  color: #f52334;
+  font-weight: 700;
+  -webkit-animation: flow 50s linear infinite;
+          animation: flow 50s linear infinite;
 }
 
 main .m-7 .main_bar .en_txt:last-child {
@@ -3017,8 +3026,8 @@ main #PopupLayer {
   background: #fff;
   border: 1px solid #e0e0e0 !important;
   padding-top: 38px;
-  -webkit-animation: fixeditems 1s forwards;
-          animation: fixeditems 1s forwards;
+  -webkit-animation: fixeditems 1.5s forwards;
+          animation: fixeditems 1.5s forwards;
 }
 
 main #PopupLayer .content {
@@ -3061,6 +3070,65 @@ main #PopupLayer p {
 
 main #PopupLayer p #check {
   margin-left: 15px;
+}
+
+main .quick {
+  position: fixed;
+  right: 15px;
+  bottom: 80px;
+  width: 60px;
+  height: 130px;
+  z-index: 2;
+}
+
+main .quick .quick_locate, main .quick .quick_shop {
+  width: 100%;
+  height: 45%;
+  position: relative;
+  background-color: #f52334;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 10px;
+  overflow: hidden;
+  -webkit-animation: fixeditems 2.2s forwards;
+          animation: fixeditems 2.2s forwards;
+}
+
+main .quick .quick_locate .quick_icon1, main .quick .quick_shop .quick_icon1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 10px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main .quick .quick_locate .quick_icon1 img, main .quick .quick_shop .quick_icon1 img {
+  width: 28px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main .quick .quick_locate .quick_icon1 p, main .quick .quick_shop .quick_icon1 p {
+  margin-top: 15px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+main .quick .quick_locate:hover .quick_icon1, main .quick .quick_shop:hover .quick_icon1 {
+  top: -52px;
+}
+
+main .quick .quick_locate:hover .quick_icon1 img, main .quick .quick_shop:hover .quick_icon1 img {
+  opacity: 0;
+}
+
+main .quick .quick_locate {
+  margin-bottom: 25px;
+  -webkit-animation: fixeditems 1.7s forwards;
+          animation: fixeditems 1.7s forwards;
 }
 
 @-webkit-keyframes rot-img1 {
@@ -3423,6 +3491,52 @@ main #PopupLayer p #check {
   main .m-5 .vod_all .vod_cont .vod_cont_img .vod_icon.active {
     border: 5px solid #f52334;
   }
+  main #PopupLayer {
+    -webkit-animation: fixeditems 1s forwards;
+            animation: fixeditems 1s forwards;
+    -webkit-transform-origin: right top;
+            transform-origin: right top;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  main .quick {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  @-webkit-keyframes fixeditems {
+    0% {
+      -webkit-transform: translateX(100%) scale(0.8);
+              transform: translateX(100%) scale(0.8);
+      opacity: 0;
+    }
+    50% {
+      -webkit-transform: translateX(100%) scale(0.8);
+              transform: translateX(100%) scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0%) scale(0.8);
+              transform: translateX(0%) scale(0.8);
+      opacity: 1;
+    }
+  }
+  @keyframes fixeditems {
+    0% {
+      -webkit-transform: translateX(100%) scale(0.8);
+              transform: translateX(100%) scale(0.8);
+      opacity: 0;
+    }
+    50% {
+      -webkit-transform: translateX(100%) scale(0.8);
+              transform: translateX(100%) scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0%) scale(0.8);
+              transform: translateX(0%) scale(0.8);
+      opacity: 1;
+    }
+  }
 }
 
 @media (max-width: 1600px) {
@@ -3764,6 +3878,52 @@ main #PopupLayer p #check {
   }
   main .m-6 .m-6-box .prd-box {
     max-width: 1200px;
+  }
+  main #PopupLayer {
+    -webkit-animation: fixeditems 1s forwards;
+            animation: fixeditems 1s forwards;
+    -webkit-transform-origin: right top;
+            transform-origin: right top;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  main .quick {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  @-webkit-keyframes fixeditems {
+    0% {
+      -webkit-transform: translateX(100%) scale(0.75);
+              transform: translateX(100%) scale(0.75);
+      opacity: 0;
+    }
+    50% {
+      -webkit-transform: translateX(100%) scale(0.75);
+              transform: translateX(100%) scale(0.75);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0%) scale(0.75);
+              transform: translateX(0%) scale(0.75);
+      opacity: 1;
+    }
+  }
+  @keyframes fixeditems {
+    0% {
+      -webkit-transform: translateX(100%) scale(0.75);
+              transform: translateX(100%) scale(0.75);
+      opacity: 0;
+    }
+    50% {
+      -webkit-transform: translateX(100%) scale(0.75);
+              transform: translateX(100%) scale(0.75);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0%) scale(0.75);
+              transform: translateX(0%) scale(0.75);
+      opacity: 1;
+    }
   }
   @-webkit-keyframes rot-img2 {
     0% {
@@ -4288,33 +4448,9 @@ main #PopupLayer p #check {
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
   }
-  @-webkit-keyframes rot-img2 {
-    0% {
-      -webkit-transform: rotate(0) scale(0.6);
-              transform: rotate(0) scale(0.6);
-    }
-    50% {
-      -webkit-transform: rotate(-10deg) scale(0.6);
-              transform: rotate(-10deg) scale(0.6);
-    }
-    100% {
-      -webkit-transform: rotate(0) scale(0.6);
-              transform: rotate(0) scale(0.6);
-    }
-  }
-  @keyframes rot-img2 {
-    0% {
-      -webkit-transform: rotate(0) scale(0.6);
-              transform: rotate(0) scale(0.6);
-    }
-    50% {
-      -webkit-transform: rotate(-10deg) scale(0.6);
-              transform: rotate(-10deg) scale(0.6);
-    }
-    100% {
-      -webkit-transform: rotate(0) scale(0.6);
-              transform: rotate(0) scale(0.6);
-    }
+  main .quick {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
   @-webkit-keyframes fixeditems {
     0% {
@@ -4348,6 +4484,34 @@ main #PopupLayer p #check {
       -webkit-transform: translateX(0%) scale(0.7);
               transform: translateX(0%) scale(0.7);
       opacity: 1;
+    }
+  }
+  @-webkit-keyframes rot-img2 {
+    0% {
+      -webkit-transform: rotate(0) scale(0.6);
+              transform: rotate(0) scale(0.6);
+    }
+    50% {
+      -webkit-transform: rotate(-10deg) scale(0.6);
+              transform: rotate(-10deg) scale(0.6);
+    }
+    100% {
+      -webkit-transform: rotate(0) scale(0.6);
+              transform: rotate(0) scale(0.6);
+    }
+  }
+  @keyframes rot-img2 {
+    0% {
+      -webkit-transform: rotate(0) scale(0.6);
+              transform: rotate(0) scale(0.6);
+    }
+    50% {
+      -webkit-transform: rotate(-10deg) scale(0.6);
+              transform: rotate(-10deg) scale(0.6);
+    }
+    100% {
+      -webkit-transform: rotate(0) scale(0.6);
+              transform: rotate(0) scale(0.6);
     }
   }
 }
