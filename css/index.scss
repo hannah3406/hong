@@ -1537,13 +1537,13 @@ main{margin-top:80px;
             .en_txt{
                 position: absolute;
                 display: inline-block;
-                vertical-align: middle;
-                width: 180%;
-                line-height: 212px;
-                right: -180%;
-                font-size: 5.88rem;
-                color: #f52334;
-                font-weight: 700;
+                // vertical-align: middle;
+                // width: 180%;
+                // line-height: 212px;
+                // right: -180%;
+                // font-size: 5.88rem;
+                // color: #f52334;
+                // font-weight: 700;
                 // animation: flow 50s linear infinite;
                 &:last-child {
                     animation-delay:25s;
@@ -1600,44 +1600,8 @@ main{margin-top:80px;
     }
 
     //quick_icon
-    .quick1{
-        position:fixed;
-        right:0;
-        bottom:0;
-        z-index:999;
-        width:60px;
-        height:120px;
-        .quick1_box{
-            width:100%;
-            height:100%;
-            .quick1_box_el{
-                display:flex;
-                flex-direction: column;
-                position: relative;
-                width: 57px;
-                height: 57px;
-                background: #f52334;
-                border-radius: 100%;
-                text-align: center;
-                img{
-                    width:19px;
-                    margin-bottom:3px;
-                    transition:all 0.5s;
-                }
-                .quick1_text{
-                    color:#fff !important;
-                }
-                .first-child{
-                    margin-bottom: 25px;
-                    transition: 0.5s;
-                }
-                .last-child{
-                    margin-bottom: 25px;
-                    transition: 0.5s 0.1s;
-                }
-            }
-        }
-    }
+
+    
 }
 
 
