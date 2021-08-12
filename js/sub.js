@@ -5,9 +5,9 @@ window.addEventListener('scroll',function(){
     let num = 0; 
 
     for(let i=0; i<elM.length; i++){
-        let elHei = elM[i].offsetTop - elM[num].offsetHeight;
+        let elHei = elM[i].offsetTop - elM[i].offsetHeight;
         let winHei = window.innerHeight;
-    
+
         if(elHei-winHei <= window.scrollY){
             elM[num].classList.remove('active');
             elM[i].classList.add('active');
@@ -49,10 +49,13 @@ for(let i=0;i<3;i++){
 
     Photo.forEach(function(v,k){
         document.addEventListener("wheel", function(e){
-            if(e.deltaY > 0){
+            if(e.deltaY > 0 ){
+                // Photo[k].style.animation = `rotateS3 1.5s infinite`
                 Photo[k].style.transform = `rotate(2deg) translateY(-50%)`
             }else{
+                // Photo[k].style.transform = `rotateS3 1.5s infinite`
                 Photo[k].style.transform = `rotate(-2deg) translateY(-50%)`
             }
         });
     })
+
