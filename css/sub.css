@@ -1192,12 +1192,13 @@ body {
 }
 
 body main .s-1 {
-  opacity: 0;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
+  display: none;
   height: 100vh;
   background-color: #ffe2de;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
   overflow: hidden;
   z-index: -2;
 }
@@ -1349,7 +1350,7 @@ body main .s-1 .bigimg-bg {
 }
 
 body main .s-1.active {
-  opacity: 1;
+  display: block;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
 }
@@ -1567,8 +1568,8 @@ body main .s-2 .s-2-box1 .s-2-content .s-2-text p strong {
 
 body main .s-2 .s-2-box1 .s-2-bg-topleft {
   position: absolute;
-  top: -80px;
-  left: 200px;
+  top: -50px;
+  left: 460px;
   -webkit-transform: rotate(3.5deg) scale(0.5);
           transform: rotate(3.5deg) scale(0.5);
   -webkit-transform-origin: left top;
@@ -1578,7 +1579,7 @@ body main .s-2 .s-2-box1 .s-2-bg-topleft {
 
 body main .s-2 .s-2-box1 .s-2-bg-topright {
   position: absolute;
-  top: -180px;
+  top: -150px;
   right: 260px;
   -webkit-transform: rotate(3.5deg) scale(0.5);
           transform: rotate(3.5deg) scale(0.5);
@@ -2048,7 +2049,9 @@ body main .s-3 {
   transition: opacity 1s;
   width: 100%;
   height: 100vh;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   overflow: hidden;
   background-color: #9ad6cb;
   z-index: -1;
@@ -2057,7 +2060,9 @@ body main .s-3 {
 body main .s-3 .s-3-photo {
   width: 100%;
   height: 100%;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 body main .s-3 .s-3-photo img {

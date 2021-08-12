@@ -2,27 +2,26 @@
 //스크롤 내리면 section하나씩 등장/퇴장
 window.addEventListener('scroll',function(){
     const elM = document.querySelectorAll('.elM');
-    let elHei = window.innerHeight;
-    let num = 100;
 
-    for(let i=0;i<elM.length;i++){
-        if(elHei <= window.scrollY* num){
+    for(let i=0; i<elM.length; i++){
+        let elHei = elM[i].offsetTop;
+        let winHei = window.innerHeight;
+    
+        if(elHei-winHei <= window.scrollY){
             elM[i].classList.add('active');
         }else{
             elM[i].classList.remove('active');
-        }
-        num ++;
-}
-
+        }  
+        elHei = elM[i].offsetHeight;
+    }
 })
 //이미지 사이즈 크기 확대/축소
 const imgZoom = document.querySelectorAll('.imgZoom');
-const zoomSpeed = 0.001;
-let zoom = 0.01;
+const zoomSpeed = 0.0005;
+let zoom = 0.5;
 
 imgZoom.forEach(function(v,k){
     document.addEventListener("wheel", function(e){
-        console.log(e);
         if(e.deltaY > 0){
             zoom += zoomSpeed;
         }else{
