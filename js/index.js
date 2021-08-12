@@ -29,9 +29,7 @@ fetch('js/prdList.json')
         //prd-list 선택자 잡아주기
         const Slider = document.querySelectorAll('.center');
         let msg = ['','','',''],srcFront,srcBack,tit,detail;
-
         for(let i=0;i<Slider.length;i++){
-
             data.items[i].good.forEach(function(v,k){
                 srcFront = data.items[i].good[k].srcFront
                 srcBack = data.items[i].good[k].srcBack
@@ -55,7 +53,6 @@ fetch('js/prdList.json')
             //Slider[i].innerHTML = msg;
             Slider[i].innerHTML = msg[i];
         }
-
 
     //slick
         //m-2

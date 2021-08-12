@@ -531,6 +531,7 @@ footer .footer .foot_copy {
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
   font-size: 0.82rem;
+  z-index: 999;
 }
 
 @media (max-width: 1600px) {
