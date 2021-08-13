@@ -69,13 +69,12 @@ window.addEventListener('scroll',function(){
     Photo.forEach(function(v,k){
         document.addEventListener("wheel", function(e){
             if(e.deltaY > 0){
-                Photo[k].style.transform +=`rotate(1deg)`;
+                Photo[k].style.animation += `rotateS3 2s infinite`;
                 // Photo[2*k].style.transform +=`rotate(-3deg)`;
             }else{
                 // Photo[k].style.transform +=`rotate(-3deg)`;
-                Photo[k].style.transform +=`rotate(-1deg)`;
+                Photo[k].style.animation += `rotateS4 2s  infinite`;
             }
-            Photo[k].style.transform = `translateY(-50%)`;
         });
     })
 

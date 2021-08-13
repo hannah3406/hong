@@ -2465,23 +2465,61 @@ body main .s-4.active {
 
 @-webkit-keyframes rotateS3 {
   0% {
-    -webkit-transform: rotate(2deg) translateY(-50%);
-            transform: rotate(2deg) translateY(-50%);
+    -webkit-transform: rotate(0) translateY(-50%);
+            transform: rotate(0) translateY(-50%);
+  }
+  50% {
+    -webkit-transform: rotate(5deg) translateY(-50%);
+            transform: rotate(5deg) translateY(-50%);
   }
   100% {
-    -webkit-transform: rotate(0deg) translateY(-50%);
-            transform: rotate(0deg) translateY(-50%);
+    -webkit-transform: rotate(0) translateY(-50%);
+            transform: rotate(0) translateY(-50%);
   }
 }
 
 @keyframes rotateS3 {
   0% {
-    -webkit-transform: rotate(2deg) translateY(-50%);
-            transform: rotate(2deg) translateY(-50%);
+    -webkit-transform: rotate(0) translateY(-50%);
+            transform: rotate(0) translateY(-50%);
+  }
+  50% {
+    -webkit-transform: rotate(5deg) translateY(-50%);
+            transform: rotate(5deg) translateY(-50%);
   }
   100% {
-    -webkit-transform: rotate(0deg) translateY(-50%);
-            transform: rotate(0deg) translateY(-50%);
+    -webkit-transform: rotate(0) translateY(-50%);
+            transform: rotate(0) translateY(-50%);
+  }
+}
+
+@-webkit-keyframes rotateS4 {
+  0% {
+    -webkit-transform: rotate(0) translateY(-50%);
+            transform: rotate(0) translateY(-50%);
+  }
+  50% {
+    -webkit-transform: rotate(-5deg) translateY(-50%);
+            transform: rotate(-5deg) translateY(-50%);
+  }
+  100% {
+    -webkit-transform: rotate(0) translateY(-50%);
+            transform: rotate(0) translateY(-50%);
+  }
+}
+
+@keyframes rotateS4 {
+  0% {
+    -webkit-transform: rotate(0) translateY(-50%);
+            transform: rotate(0) translateY(-50%);
+  }
+  50% {
+    -webkit-transform: rotate(-5deg) translateY(-50%);
+            transform: rotate(-5deg) translateY(-50%);
+  }
+  100% {
+    -webkit-transform: rotate(0) translateY(-50%);
+            transform: rotate(0) translateY(-50%);
   }
 }
 
