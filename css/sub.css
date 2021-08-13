@@ -1558,8 +1558,8 @@ body main .s-2 .s-2-box1 .s-2-content .s-2-text p strong {
   display: block;
   color: #3c2121;
   font-weight: 300;
-  letter-spacing: -3.5px;
-  margin-bottom: 30px;
+  letter-spacing: -2.5px;
+  margin-bottom: 20px;
   font-size: 4.1rem;
 }
 
@@ -1761,14 +1761,14 @@ body main .s-21 .s-2-box2 .s-2-content .s-2-text p strong {
   color: #3c2121;
   font-weight: 300;
   letter-spacing: -3.5px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 4.1rem;
 }
 
 body main .s-21 .s-2-box2 .s-2-bg-topleft {
   position: absolute;
-  top: -220px;
-  left: 200px;
+  top: -200px;
+  left: 460px;
   -webkit-transform: rotate(3.5deg) scale(0.5);
           transform: rotate(3.5deg) scale(0.5);
   -webkit-transform-origin: left top;
@@ -1965,7 +1965,7 @@ body main .s-22 .s-2-box3 .s-2-content .s-2-text p strong {
   color: #3c2121;
   font-weight: 300;
   letter-spacing: -3.5px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 4.1rem;
 }
 
