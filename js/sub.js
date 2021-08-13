@@ -73,7 +73,7 @@ window.addEventListener('scroll',function(){
                 // Photo[2*k].style.transform +=`rotate(-3deg)`;
             }else{
                 // Photo[k].style.transform +=`rotate(-3deg)`;
-                Photo[k].style.animation += `rotateS4 2s  infinite`;
+                Photo[k].style.animation += `rotateS4 2s infinite`;
             }
         });
     })

@@ -310,7 +310,7 @@ body{
                 }
                 .s-2-bg-bottomright{
                     position:absolute;
-                    bottom:-100px; right:260px;
+                    bottom:-100px; right:450px;
                     transform: rotate(3.5deg) scale(0.4);
                     transform-origin:right bottom;
                     opacity: 60.5;
@@ -462,7 +462,7 @@ body{
                 }
                 .s-2-bg-bottomright{
                     position:absolute;
-                    bottom:-140px; right:260px;
+                    bottom:-140px; right:350px;
                     transform: rotate(3.5deg) scale(0.4);
                     transform-origin:right bottom;
                     opacity: 60.5;
@@ -615,7 +615,7 @@ body{
                 }
                 .s-2-bg-bottomright{
                     position:absolute;
-                    bottom:-250px; right:400px;
+                    bottom:-350px; right:400px;
                     transform: rotate(3.5deg) scale(0.4);
                     transform-origin:right bottom;
                     opacity: 60.5;
@@ -627,6 +627,8 @@ body{
             transition:opacity 1s;
             .s-2-box1{
                 .s-2-content{
+                    animation-delay: .7s;
+                    animation: contentUp 1s forwards;
                     .s-2-bigimg{
                         img{
                             animation: rotateS2 3s infinite;
@@ -637,6 +639,8 @@ body{
             }
             .s-2-box2{
                 .s-2-content{
+                    animation-delay: .7s;
+                    animation: contentUp .5s forwards;
                     .s-2-bigimg{
                         img{
                             animation: rotateS2 3s infinite;
@@ -647,6 +651,8 @@ body{
             }
             .s-2-box3{
                 .s-2-content{
+                    animation-delay: .7s;
+                    animation: contentUp .5s forwards;
                     .s-2-bigimg{
                         img{
                             animation: rotateS2 3s infinite;
@@ -717,6 +723,18 @@ body{
         .s-3.active{
             opacity: 1;
             transition:opacity 1s;
+            .s-3-box{
+                .s-3-text{
+                    p{
+                        strong{
+                            &::before{
+                                animation-delay:1s;
+                                animation:lineUp .5s forwards;
+                            }                
+                        }
+                    }
+                }
+            }
         }
         .s-4{
             height:100vh;
@@ -858,11 +876,18 @@ body{
 	0% {
 		transform: rotate(0) translateY(-50%);
 	}50% {
-		transform: rotate(-5deg) translateY(-50%);
+		transform: rotate(-10deg) translateY(-50%);
 	}
 	100% {
 		transform: rotate(0) translateY(-50%);
 	}
 }
-
+@keyframes contentUp {
+    0%{transform: translateY(10%); opacity: 0;}
+    100%{transform: translateY(0%);opacity: 1;}
+}
+@keyframes lineUp {
+    0%{transform: translateY(-800%); opacity: 0;}
+    100%{transform: translateY(0%);opacity: 1;}
+}
 @import "_mediaSub";

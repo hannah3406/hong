@@ -1599,7 +1599,7 @@ body main .s-2 .s-2-box1 .s-2-bg-bottomleft {
 body main .s-2 .s-2-box1 .s-2-bg-bottomright {
   position: absolute;
   bottom: -100px;
-  right: 260px;
+  right: 450px;
   -webkit-transform: rotate(3.5deg) scale(0.4);
           transform: rotate(3.5deg) scale(0.4);
   -webkit-transform-origin: right bottom;
@@ -1801,7 +1801,7 @@ body main .s-21 .s-2-box2 .s-2-bg-bottomleft {
 body main .s-21 .s-2-box2 .s-2-bg-bottomright {
   position: absolute;
   bottom: -140px;
-  right: 260px;
+  right: 350px;
   -webkit-transform: rotate(3.5deg) scale(0.4);
           transform: rotate(3.5deg) scale(0.4);
   -webkit-transform-origin: right bottom;
@@ -2004,7 +2004,7 @@ body main .s-22 .s-2-box3 .s-2-bg-bottomleft {
 
 body main .s-22 .s-2-box3 .s-2-bg-bottomright {
   position: absolute;
-  bottom: -250px;
+  bottom: -350px;
   right: 400px;
   -webkit-transform: rotate(3.5deg) scale(0.4);
           transform: rotate(3.5deg) scale(0.4);
@@ -2019,6 +2019,13 @@ body main .s-2.active, body main .s-21.active, body main .s-22.active {
   transition: opacity 1s;
 }
 
+body main .s-2.active .s-2-box1 .s-2-content, body main .s-21.active .s-2-box1 .s-2-content, body main .s-22.active .s-2-box1 .s-2-content {
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
+  -webkit-animation: contentUp 1s forwards;
+          animation: contentUp 1s forwards;
+}
+
 body main .s-2.active .s-2-box1 .s-2-content .s-2-bigimg img, body main .s-21.active .s-2-box1 .s-2-content .s-2-bigimg img, body main .s-22.active .s-2-box1 .s-2-content .s-2-bigimg img {
   -webkit-animation: rotateS2 3s infinite;
           animation: rotateS2 3s infinite;
@@ -2026,11 +2033,25 @@ body main .s-2.active .s-2-box1 .s-2-content .s-2-bigimg img, body main .s-21.ac
   transition: all 5s;
 }
 
+body main .s-2.active .s-2-box2 .s-2-content, body main .s-21.active .s-2-box2 .s-2-content, body main .s-22.active .s-2-box2 .s-2-content {
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
+  -webkit-animation: contentUp .5s forwards;
+          animation: contentUp .5s forwards;
+}
+
 body main .s-2.active .s-2-box2 .s-2-content .s-2-bigimg img, body main .s-21.active .s-2-box2 .s-2-content .s-2-bigimg img, body main .s-22.active .s-2-box2 .s-2-content .s-2-bigimg img {
   -webkit-animation: rotateS2 3s infinite;
           animation: rotateS2 3s infinite;
   -webkit-transition: all 5s;
   transition: all 5s;
+}
+
+body main .s-2.active .s-2-box3 .s-2-content, body main .s-21.active .s-2-box3 .s-2-content, body main .s-22.active .s-2-box3 .s-2-content {
+  -webkit-animation-delay: .7s;
+          animation-delay: .7s;
+  -webkit-animation: contentUp .5s forwards;
+          animation: contentUp .5s forwards;
 }
 
 body main .s-2.active .s-2-box3 .s-2-content .s-2-bigimg img, body main .s-21.active .s-2-box3 .s-2-content .s-2-bigimg img, body main .s-22.active .s-2-box3 .s-2-content .s-2-bigimg img {
@@ -2144,6 +2165,13 @@ body main .s-3.active {
   opacity: 1;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
+}
+
+body main .s-3.active .s-3-box .s-3-text p strong::before {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation: lineUp .5s forwards;
+          animation: lineUp .5s forwards;
 }
 
 body main .s-4 {
@@ -2499,8 +2527,8 @@ body main .s-4.active {
             transform: rotate(0) translateY(-50%);
   }
   50% {
-    -webkit-transform: rotate(-5deg) translateY(-50%);
-            transform: rotate(-5deg) translateY(-50%);
+    -webkit-transform: rotate(-10deg) translateY(-50%);
+            transform: rotate(-10deg) translateY(-50%);
   }
   100% {
     -webkit-transform: rotate(0) translateY(-50%);
@@ -2514,12 +2542,64 @@ body main .s-4.active {
             transform: rotate(0) translateY(-50%);
   }
   50% {
-    -webkit-transform: rotate(-5deg) translateY(-50%);
-            transform: rotate(-5deg) translateY(-50%);
+    -webkit-transform: rotate(-10deg) translateY(-50%);
+            transform: rotate(-10deg) translateY(-50%);
   }
   100% {
     -webkit-transform: rotate(0) translateY(-50%);
             transform: rotate(0) translateY(-50%);
+  }
+}
+
+@-webkit-keyframes contentUp {
+  0% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes contentUp {
+  0% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes lineUp {
+  0% {
+    -webkit-transform: translateY(-800%);
+            transform: translateY(-800%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes lineUp {
+  0% {
+    -webkit-transform: translateY(-800%);
+            transform: translateY(-800%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
   }
 }
 
