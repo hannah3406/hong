@@ -23,13 +23,13 @@ $num : (480px, 768px, 1024px,1200px, 1400px, 1600px, 1800px);
                     }
                 }
                 .s-1-img{
-                    .img-icon{
-                        left:-50px;top:30%; 
-                    }
-                    .img-txt{
-                        position:absolute;right:50px;top:0; 
-                    }
                     .imgbg{
+                        .img-icon{
+                            left:-50px;top:30%; 
+                        }
+                        .img-txt{
+                            position:absolute;right:0;top:0; 
+                        }
                         width:450px;
                         height:450px;
                         .bigimg{
@@ -340,15 +340,17 @@ main{
                 }
             }
             .s-1-img{
-                .img-icon{
-                    left:-80px;top:30%; transform:scale(0.7);
-                }
-                .img-txt{
-                    position:absolute; right:0px;top:0;  transform:scale(0.7)
-                }
+
                 .imgbg{
                     width:400px;
                     height:400px;
+                    .img-icon{
+                        left:-80px;top:30%; transform:scale(1);
+                        transform-origin:left;
+                    }
+                    .img-txt{
+                        position:absolute; right:0px;top:0;  transform:scale(0.7)
+                    }
                     .bigimg{
                         transform:scale(0.9);
                         transform-origin:left bottom;
@@ -509,8 +511,8 @@ main{
         .s-3-photo{
             transform-origin:left;
             img{
-                width:250px;
-                height:260px;
+                width:280px;
+                height:290px;
             }
         }
         .s-3-text{
@@ -657,7 +659,6 @@ main{
 };
 @include media(nth($num,5)){
 //main
-//main
 main{
     .s-1{
         .s-1-content{
@@ -675,15 +676,16 @@ main{
                 }
             }
             .s-1-img{
-                .img-icon{
-                    left:-80px;top:30%; transform:scale(0.7);
-                }
-                .img-txt{
-                    position:absolute; right:0px;top:0;  transform:scale(0.7)
-                }
+
                 .imgbg{
                     width:400px;
                     height:400px;
+                    .img-icon{
+                        left:-80px;top:30%; transform:scale(0.7);
+                    }
+                    .img-txt{
+                        position:absolute; right:0px;top:0;  transform:scale(0.7);
+                    }
                     .bigimg{
                         transform:scale(0.9);
                         transform-origin:left bottom;
@@ -981,11 +983,11 @@ main{
     }
     @keyframes rotateS2 {
         0% {
-            transform:rotate(0deg) ;
+            transform:rotate(0deg) scale(0.7);
         }50% {
-            transform:rotate(-10deg);
+            transform:rotate(-10deg) scale(0.7);
         }100% {
-            transform:rotate(0deg);
+            transform:rotate(0deg) scale(0.7);
         }
     }
 };

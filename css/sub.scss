@@ -146,9 +146,9 @@ $w:100%;
                     }
                 }
                 .s-1-img{
-                    .img-icon{animation:fun11 2s infinite; animation-delay:.8s;}
-                    .img-txt{animation:beat 1s infinite;  z-index:23;}
                     .imgbg{
+                        .img-icon{animation:fun11 2s infinite; animation-delay:.8s;}
+                        .img-txt{animation:beat 1s infinite;  z-index:23;}
                         .bigimg{
                             animation:appearanceimg 1.25s forwards;
                             animation-delay:0.5s;
@@ -676,8 +676,8 @@ $w:100%;
                     img{
                         position:absolute;
                         top:50%; transform:translateY(-50%);
-                        &:nth-of-type(1){left:-20%;}
-                        &:nth-of-type(2){left:-15%;}
+                        &:nth-of-type(1){left:-40%;}
+                        &:nth-of-type(2){left:-25%;}
                         &:nth-of-type(3){left:-10%;}
                         &:nth-of-type(4){left:5%;}
                         &:nth-of-type(5){left:20%;}
@@ -688,6 +688,8 @@ $w:100%;
                         &:nth-of-type(10){left:95%;}
                         &:nth-of-type(11){left:110%;}
                         &:nth-of-type(12){left:125%;}
+                        &:nth-of-type(13){left:140%;}
+                        &:nth-of-type(14){left:155%;}
                     }
                 }
                 .s-3-text{
