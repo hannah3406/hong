@@ -706,7 +706,9 @@ body{
                             font-size: 40px;
                             position:relative;
                             z-index:2;
+
                             &::before{
+                                overflow: hidden;
                                 content:'';
                                 width:100%;
                                 position: absolute;
@@ -716,6 +718,8 @@ body{
                                 left: 0;
                                 transition: all 0.5s 0.2s;
                                 z-index: -1;
+                                opacity:0;
+                                
                             }                
                         }
                     }
@@ -724,14 +728,16 @@ body{
         }
         .s-3.active{
             opacity: 1;
-            transition:opacity 1s;
+            transition:1s;
             .s-3-box{
                 .s-3-text{
                     p{
                         strong{
+
                             &::before{
-                                animation-delay:1s;
-                                animation:lineUp .5s forwards;
+                                overflow:hidden;
+
+                                animation:lineUp 2s forwards;
                             }                
                         }
                     }
@@ -889,7 +895,7 @@ body{
     100%{transform: translateY(0%);opacity: 1;}
 }
 @keyframes lineUp {
-    0%{transform: translateY(-800%); opacity: 0;}
+    0%{transform: translateX(-1000%); opacity: 0;}
     100%{transform: translateY(0%);opacity: 1;}
 }
 @import "_mediaSub";

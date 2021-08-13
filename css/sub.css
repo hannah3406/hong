@@ -2143,6 +2143,7 @@ body main .s-3 .s-3-box .s-3-text p strong {
 }
 
 body main .s-3 .s-3-box .s-3-text p strong::before {
+  overflow: hidden;
   content: '';
   width: 100%;
   position: absolute;
@@ -2153,19 +2154,19 @@ body main .s-3 .s-3-box .s-3-text p strong::before {
   -webkit-transition: all 0.5s 0.2s;
   transition: all 0.5s 0.2s;
   z-index: -1;
+  opacity: 0;
 }
 
 body main .s-3.active {
   opacity: 1;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 body main .s-3.active .s-3-box .s-3-text p strong::before {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation: lineUp .5s forwards;
-          animation: lineUp .5s forwards;
+  overflow: hidden;
+  -webkit-animation: lineUp 2s forwards;
+          animation: lineUp 2s forwards;
 }
 
 body main .s-4 {
@@ -2573,8 +2574,8 @@ body main .s-4.active {
 
 @-webkit-keyframes lineUp {
   0% {
-    -webkit-transform: translateY(-800%);
-            transform: translateY(-800%);
+    -webkit-transform: translateX(-1000%);
+            transform: translateX(-1000%);
     opacity: 0;
   }
   100% {
@@ -2586,8 +2587,8 @@ body main .s-4.active {
 
 @keyframes lineUp {
   0% {
-    -webkit-transform: translateY(-800%);
-            transform: translateY(-800%);
+    -webkit-transform: translateX(-1000%);
+            transform: translateX(-1000%);
     opacity: 0;
   }
   100% {
