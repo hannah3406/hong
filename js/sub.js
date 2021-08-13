@@ -65,6 +65,7 @@ window.addEventListener('scroll',function(){
             PhotoBox.style.transform +=`translateX(10px)`;
         }
     });
+    
 
     Photo.forEach(function(v,k){
         document.addEventListener("wheel", function(e){

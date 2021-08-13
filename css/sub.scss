@@ -6,9 +6,6 @@
 
 
 $w:100%;
-body{
-    // height:500vh;
-    //main
     main{
         margin-top:80px;
         section{
@@ -62,15 +59,6 @@ body{
                     z-index:1;
                     width:45%;
                     position:relative;
-                    .img-icon{
-                        position:absolute;left:-50px;top:30%; 
-                        // animation:fun 2s infinite; animation-delay:.8s;
-                    }
-                    .img-txt{
-                        position:absolute;right:0;top:0; 
-                        // animation:beat 1s infinite;  
-                        z-index:23;
-                    }
                     .imgbg{
                         position:relative;
                         z-index:-1;
@@ -78,6 +66,15 @@ body{
                         height:590px;
                         border-radius:50%;
                         background-color:#ffd55f;
+                        .img-icon{
+                            position:absolute;left:-50px;top:30%; 
+                            // animation:fun 2s infinite; animation-delay:.8s;
+                        }
+                        .img-txt{
+                            position:absolute;right:0;top:0; 
+                            // animation:beat 1s infinite;  
+                            z-index:23;
+                        }
                         .bigimg{
                             width:100%;
                             transform-origin:bottom;
@@ -149,7 +146,7 @@ body{
                     }
                 }
                 .s-1-img{
-                    .img-icon{animation:fun 2s infinite; animation-delay:.8s;}
+                    .img-icon{animation:fun11 2s infinite; animation-delay:.8s;}
                     .img-txt{animation:beat 1s infinite;  z-index:23;}
                     .imgbg{
                         .bigimg{
@@ -679,16 +676,18 @@ body{
                     img{
                         position:absolute;
                         top:50%; transform:translateY(-50%);
-                        &:nth-of-type(1){left:-10%;}
-                        &:nth-of-type(2){left:5%;}
-                        &:nth-of-type(3){left:20%;}
-                        &:nth-of-type(4){left:35%;}
-                        &:nth-of-type(5){left:50%;}
-                        &:nth-of-type(6){left:65%;}
-                        &:nth-of-type(7){left:80%;}
-                        &:nth-of-type(8){left:95%;}
-                        &:nth-of-type(9){left:110%;}
-                        &:nth-of-type(10){left:125%;}
+                        &:nth-of-type(1){left:-20%;}
+                        &:nth-of-type(2){left:-15%;}
+                        &:nth-of-type(3){left:-10%;}
+                        &:nth-of-type(4){left:5%;}
+                        &:nth-of-type(5){left:20%;}
+                        &:nth-of-type(6){left:35%;}
+                        &:nth-of-type(7){left:50%;}
+                        &:nth-of-type(8){left:65%;}
+                        &:nth-of-type(9){left:80%;}
+                        &:nth-of-type(10){left:95%;}
+                        &:nth-of-type(11){left:110%;}
+                        &:nth-of-type(12){left:125%;}
                     }
                 }
                 .s-3-text{
@@ -697,13 +696,13 @@ body{
                     transform:translateX(-50%);
                     top: 80%;
                     p{
-                        font-size: 40px;
+                        font-size: 2.5rem;
                         color: #3b2120;
                         font-weight: 100;
                         letter-spacing: -2px;
                         text-align: center;
                         strong{
-                            font-size: 40px;
+                            font-size: 2.5rem;
                             position:relative;
                             z-index:2;
 
@@ -835,7 +834,7 @@ body{
             transition:opacity .3s;
         }
     }
-}
+
 
 //animation
 @keyframes beat {
@@ -844,6 +843,11 @@ body{
     100%{transform: rotate(0) scale(0.95);}
 }
 @keyframes fun {
+    0%{transform: rotate(0);}
+    50%{transform: rotate(1deg);}
+    100%{transform: rotate(0);}
+}
+@keyframes fun11 {
     0%{transform: rotate(0);}
     50%{transform: rotate(1deg);}
     100%{transform: rotate(0);}
