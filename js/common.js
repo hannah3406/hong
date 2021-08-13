@@ -48,7 +48,7 @@ const HamClose = document.querySelector('.ham_close');
 
 }
 LoadingWithMask();
-setTimeout("closeLoadingWithMask()", 2000);
+setTimeout("closeLoadingWithMask()", 3000);
 
 //로딩중
 function LoadingWithMask() {
