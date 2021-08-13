@@ -48,12 +48,13 @@ const HamClose = document.querySelector('.ham_close');
 
 }
 LoadingWithMask();
-setTimeout("closeLoadingWithMask()", 3000);
+setTimeout("closeLoadingWithMask()", 2000);
 
 //로딩중
 function LoadingWithMask() {
     //마스크 표시
     $('#mask').show();  
+
     //로딩중 이미지 표시
     $('#loadingImg').show();
 }
