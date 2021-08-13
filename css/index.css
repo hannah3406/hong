@@ -3615,15 +3615,15 @@ main .quick .quick_locate {
   }
   main .m-2 .m-2-box .prd-list .prd-btn li {
     max-width: 180px;
-    height: 40px;
-    line-height: 2.4;
-    border: solid 1.5px #f52334;
+    height: 42px;
+    line-height: 2.5;
+    border: solid 2px #f52334;
   }
   main .m-3 {
     vertical-align: middle;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: 40px 0;
     background: #ffdcd1;
     text-align: center;

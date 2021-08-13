@@ -162,25 +162,6 @@ fetch('js/prdList.json')
 
 }
 
-//section5 vod tab기능
-const btnPlay = document.querySelectorAll('.vod_cover img');
-const elPlayIcon = document.querySelectorAll('.vod_icon');
-const btnPlay1 = document.querySelectorAll('.btn_play');
-
-let idx5 = 0;
-
-elPlayIcon.forEach(function(v,k){
-    elPlayIcon[k].addEventListener('click',function(){
-        elPlayIcon[idx5].classList.remove('active');
-        btnPlay[idx5].classList.remove('active');
-        btnPlay1[idx5].classList.remove('active');
-
-        elPlayIcon[k].classList.add('active');
-        btnPlay[k].classList.add('active');
-        btnPlay1[k].classList.add('active');
-        idx5 = k;
-    })
-});
 
 //wheel event
 let delta,num=0,move,len=$('.con').length;
@@ -282,6 +263,27 @@ let objVod = [];
         player.stopVideo();
     }
 
+//section5 vod tab기능
+const btnPlay = document.querySelectorAll('.vod_cover img');
+const elPlayIcon = document.querySelectorAll('.vod_icon');
+const btnPlay1 = document.querySelectorAll('.btn_play');
+
+let idx5 = 0;
+
+elPlayIcon.forEach(function(v,k){
+    elPlayIcon[k].addEventListener('click',function(){
+        elPlayIcon[idx5].classList.remove('active');
+        btnPlay[idx5].classList.remove('active');
+        btnPlay1[idx5].classList.remove('active');
+        objVod[idx5].stopVideo();
+
+        elPlayIcon[k].classList.add('active');
+        btnPlay[k].classList.add('active');
+        btnPlay1[k].classList.add('active');
+        idx5 = k;
+
+    })
+});
 
 let idxVdo = 0;
 const vodPlayer1 = document.querySelectorAll('.Vodplayer');
@@ -297,5 +299,6 @@ for(let i=0; i<btnPlay1.length;i++){
         btnPlay1[i].classList.remove('active'); //버튼
 
         idxVdo = i;
+
     });
 }
