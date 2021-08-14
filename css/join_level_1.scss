@@ -1,0 +1,281 @@
+@import "_common";
+@import "_mixin";
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+main{
+    margin-top:80px;
+    .join-box{
+        max-width:38%;
+        margin:150px auto;
+        .join-tit{
+            width:100%;
+            .join-tit-box{
+                position:relative;
+                width:100%;
+                .join-tbox{
+                    position:relative;
+                    width:57%;
+                    margin:0 auto;
+                    .join-tit-txt{
+                        position:relative;
+                        display:inline-block;
+                        transition:all 0.5s 0.5s;
+                        transform:rotate(-5deg);
+                        min-width: 220px;
+                        margin-right:20px;
+                        animation:rotateImg .5s forwards;
+                        animation-delay:.2s;
+                        &::before{
+                            content:'';
+                            position: absolute;
+                            width:100%;
+                            height: 96%;
+                            background: #ee7868;
+                            top: 7%;
+                            lefT: 2%;
+                            z-index: 5;
+                            border: 3px solid #3C2121;
+                        }
+                        > span{
+                            width: 100%;
+                            font-size: 2.35rem;
+                            color: #3C2121;
+                            border: 3px solid #3C2121;
+                            /* border-radius: 3px; */
+                            padding: 12px 60px;
+                            text-align: center;
+                            line-height: 1;
+                            letter-spacing: -1.5px;
+                            font-weight: 700;
+                            display: block;
+                            background: #fff;
+                            position: relative;
+                            z-index: 10;
+                            font-family: 'Montserrat', sans-serif;
+                            letter-spacing: 0
+                        }
+                    }
+                    > img{
+                        height:0;
+                        position:absolute;
+                        top:10px;
+                        right:-30px;
+                        transition:all 0.5s 1s;
+                        animation:arrowImg .5s forwards;
+                        animation-delay: .7s;
+                    }
+                }
+            }
+            .join-step-box{
+                width:50%;
+                @include flex;
+                text-align: Center;
+                padding: 14px;
+                border-radius: 50px;
+                background: #fff8e5;
+                margin: 80px auto;
+                margin-bottom:60px;
+                > li{
+                    width:33%;
+                    display: inline-block;
+                    border-radius: 100%;
+                    background: #fff;
+                    position: Relative;
+                    font-size: 0.8rem;
+                    color: #d1d1d1;
+                    margin-left:38px;
+                    >img{opacity: 0.3;}
+                    >span{
+                        position:absolute;
+                        top:120%;
+                        left:50%;
+                        transform:translateX(-50%);
+                    }
+                    &:first-child{margin-left:0;}
+                    &::before{
+                        content: "";
+                        display: block;
+                        width: 7px;
+                        height: 10px;
+                        background: url(/img/join-arrow.png) no-repeat center center;
+                        position: Absolute;
+                        right: -21px;
+                        top: 50%;
+                        margin-top: -5px;
+                    }
+                    &:last-child::before{
+                        background:none;
+                    }
+                }
+                > li.stepOn{
+                    background: #fef5c0;
+                    >img{
+                        opacity: 1;
+                    }
+                    >span{font-weight:bold;}
+                }
+            }
+            .join-step-1{
+                h3{
+                    border-bottom: 2px solid #3c2121;
+                    padding-bottom: 10px;
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                    color: #222222;
+                }
+                form{
+                    padding: 20px;
+                    width: 100%;
+                    > p{
+                        padding: 50px 20px 10px 20px;
+                        width: 100%;
+                        border-bottom: 1px solid #ececec;
+                        color: rgba(71, 71, 71, 0.9);
+                        font-size:1.1rem;  
+                        >input{
+                            padding:3px;
+                            margin-right:10px;
+                            border: 1px solid #ececec;
+                            border-radius: 50%;
+                        }
+                        &:first-child{
+                            width: 100%;
+                            border-bottom: 1px solid #ececec;
+                            border-radius: 35px;
+                            background: #f6f6f6;
+                            padding: 20px;
+                            font-weight:bold;  
+                            color:#222222;  
+                            font-size:1.1rem;                        
+                        }
+                    }
+                    .content-text{
+                        height:100px; overflow-y:scroll;
+                        border:1px solid #ececec;
+                        font-size:0.9rem;
+                        color: rgba(71, 71, 71, 0.7);
+                    }
+                    .important_check{
+                        position:relative;
+                        width:80%;
+                        margin: 0 auto;
+                        >strong{
+                            display:none;
+                            width:100%;
+                            color: #f52334;
+                            position:absolute;
+                            top:0;
+                            left:0;
+                            padding-left:20px;
+                            background: url(../img/icon_caution02.png) no-repeat 0px 3px;
+                        }
+                        >strong.active{
+                            display:block;
+                            width:100%;
+                            color: #f52334;
+                            position:absolute;
+                            top:0;
+                            left:0;
+                            padding-left:20px;
+                            background: url(../img/icon_caution02.png) no-repeat 0px 3px;
+                        }
+                    }
+                    .btn_step_box{
+                        text-align: center;
+                        width:80%;
+                        margin:0 auto;
+                        @include flex;
+                        >p{
+                            width:49%;
+                            margin:0 auto;
+                            >input{
+                                display:inline-block;
+                                position: relative;
+                                width: 100%;
+                                height: 56px;
+                                line-height: 2.7;
+                                border-radius: 36px;
+                                font-family: 'Nunito Sans', 'Noto Sans KR', sans-serif;
+                                font-size: 1.2rem;
+                                font-weight: 500;
+                                text-align: center;
+                                z-index: 1;
+                                overflow: hidden;
+                                border: solid 3px #3c2121;
+                                color: #fff;
+                                background: #3c2121;
+                                margin-top:50px;
+                                cursor: pointer;
+                            }
+                            &:last-child{
+                                >input{
+                                border: 1px solid #f52334;
+                                background: #f52334;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    //quick_icon
+    .quick{
+        position:fixed;
+        right:15px;
+        bottom:40px;
+        width:60px;
+        height:130px;
+        z-index:2;
+        .quick_locate,.quick_shop{
+            width:100%;
+            height:45%;
+            position:relative;
+            background-color:#f52334;
+            border-radius:50%;
+            text-align:center;
+            padding-top:10px;
+            overflow:hidden;
+            animation:fixeditems 2.2s forwards;
+            .quick_icon1{
+                width:100%;
+                height:100%;
+                position:absolute;
+                top:0; left:0;
+                padding-top:10px;
+                transition:1s;
+                img{width:28px;transition:1s;}
+                p{margin-top:15px;color:#fff;font-size:0.9rem;}
+            }
+            &:hover{
+                .quick_icon1{
+                    top:-52px;
+                    img{opacity:0;}
+                }
+            }
+        }
+        .quick_locate{
+            margin-bottom:25px;
+            animation:fixeditems 1.7s forwards;
+        }
+
+    }
+}
+
+//animation
+@keyframes arrowImg {
+    0%{height:0; opacity:0;}
+    100%{height:35px; opacity:1;}
+}
+@keyframes rotateImg {
+//animation
+    0%{transform: rotate(0);}
+    100%{transform: rotate(-5deg);}
+}
+
+@import "_mediaJoin";
