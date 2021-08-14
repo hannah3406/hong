@@ -1,0 +1,219 @@
+@import "_common";
+@import "_mixin";
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+main{
+    margin-top:80px;
+    .join-box{
+        max-width:38%;
+        margin:150px auto;
+        .join-tit{
+            width:100%;
+            .join-tit-box{
+                position:relative;
+                width:100%;
+                .join-tbox{
+                    position:relative;
+                    width:57%;
+                    margin:0 auto;
+                    .join-tit-txt{
+                        position:relative;
+                        display:inline-block;
+                        transition:all 0.5s 0.5s;
+                        transform:rotate(-5deg);
+                        min-width: 220px;
+                        margin-right:20px;
+                        animation:rotateImg .5s forwards;
+                        animation-delay:.2s;
+                        &::before{
+                            content:'';
+                            position: absolute;
+                            width:100%;
+                            height: 96%;
+                            background: #ee7868;
+                            top: 7%;
+                            lefT: 2%;
+                            z-index: 5;
+                            border: 3px solid #3C2121;
+                        }
+                        > span{
+                            width: 100%;
+                            font-size: 2.35rem;
+                            color: #3C2121;
+                            border: 3px solid #3C2121;
+                            /* border-radius: 3px; */
+                            padding: 12px 60px;
+                            text-align: center;
+                            line-height: 1;
+                            letter-spacing: -1.5px;
+                            font-weight: 700;
+                            display: block;
+                            background: #fff;
+                            position: relative;
+                            z-index: 10;
+                            font-family: 'Montserrat', sans-serif;
+                            letter-spacing: 0
+                        }
+                    }
+                    > img{
+                        height:0;
+                        position:absolute;
+                        top:10px;
+                        right:-30px;
+                        transition:all 0.5s 1s;
+                        animation:arrowImg .5s forwards;
+                        animation-delay: .7s;
+                    }
+                }
+                .join-login-all{
+                    max-width:100%;
+                    margin:0 auto;
+                    .join-login-shop{
+                        width:100%;
+                        margin: 80px auto;
+                        .h3-tit{
+                            font-size: 1.2rem;
+                            color: #3c2121;
+                            text-align: left;
+                            letter-spacing: -1px;
+                            font-weight: 600;
+                            border-bottom: 2px solid #3c2121;
+                            padding-bottom: 10px;
+                        }
+                        .join-login-txt{
+                            margin: 0;
+                            text-align: left;
+                            font-size: 0.94rem;
+                            color: #666;
+                            font-weight: 400;
+                            padding:15px 0;
+                        }
+                        .btn-join{
+                            display: block;
+                            border: solid 3px #f52334;
+                            color: #fff;
+                            background: #f52334;
+                            border-radius: 40px;
+                            font-size: 1.08rem;
+                            font-weight: 500;
+                            text-align: center;
+                            padding: 3% 0;
+                            margin: 50px 0 0;
+                        }
+                    }
+                    .join-login-sns{
+                        margin: 80px auto;
+                        text-align: center;
+                        .h3-tit{
+                            font-size: 1.176rem;
+                            color: #3c2121;
+                            text-align: left;
+                            letter-spacing: -1px;
+                            font-weight: 600;
+                            border-bottom: 2px solid #3c2121;
+                            padding-bottom: 10px;
+                        }
+                        .join-login-txt{
+                            margin: 0;
+                            text-align: left;
+                            font-size: 0.94rem;
+                            color: #666;
+                            font-weight: 400;
+                            padding:15px 0;
+                            padding-left: 35px;
+                            background: url(/img/icon_noti.png)no-repeat left 15px;
+                            background-size: 25px 25px;
+                        }
+                        .sns-icon-box{
+                            width:100%;
+                            @include flex;
+                            >li{
+                                position: Relative;
+                                display: inline-block;
+                                vertical-align: middle;
+                                width: 33.33%;
+                                margin-top: 40px;
+                                padding: 0 15px;
+                                font-family: 'Noto Sans KR', sans-serif;
+                                font-size: 0.94rem;
+                                color: #666;
+                                text-align: center;
+                                @include flex;
+                                flex-direction: column;
+                                >img{margin-bottom:10px;cursor: pointer;}
+                                &::after{
+                                    content: '';
+                                    position: Absolute;
+                                    width: 1px;
+                                    height: 26px;
+                                    background: #dddddd;
+                                    top: 50%;
+                                    right: 0;
+                                    transform: translate(0, -50%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    //quick_icon
+    .quick{
+        position:fixed;
+        right:15px;
+        bottom:40px;
+        width:60px;
+        height:130px;
+        z-index:2;
+        .quick_locate,.quick_shop{
+            width:100%;
+            height:45%;
+            position:relative;
+            background-color:#f52334;
+            border-radius:50%;
+            text-align:center;
+            padding-top:10px;
+            overflow:hidden;
+            animation:fixeditems 2.2s forwards;
+            .quick_icon1{
+                width:100%;
+                height:100%;
+                position:absolute;
+                top:0; left:0;
+                padding-top:10px;
+                transition:1s;
+                img{width:28px;transition:1s;}
+                p{margin-top:15px;color:#fff;font-size:0.9rem;}
+            }
+            &:hover{
+                .quick_icon1{
+                    top:-52px;
+                    img{opacity:0;}
+                }
+            }
+        }
+        .quick_locate{
+            margin-bottom:25px;
+            animation:fixeditems 1.7s forwards;
+        }
+
+    }
+}
+
+//animation
+@keyframes arrowImg {
+    0%{height:0; opacity:0;}
+    100%{height:35px; opacity:1;}
+}
+@keyframes rotateImg {
+//animation
+    0%{transform: rotate(0);}
+    100%{transform: rotate(-5deg);}
+}
+
+@import "_mediaJoin";

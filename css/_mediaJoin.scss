@@ -1,0 +1,510 @@
+$num : (480px, 768px, 1024px, 1200px, 1400px, 1600px, 1800px);
+
+@mixin media($width){
+    @media(max-width:$width){
+        @content;
+    }
+}
+//pc
+@include media(nth($num,7)){
+    main{
+        margin-top:80px;
+        .join-box{
+            max-width:40%;
+            margin:120px auto;
+            .join-tit{
+                width:100%;
+                .join-tit-box{
+                    position:relative;
+                    width:100%;
+                    .join-tbox{
+                        position:relative;
+                        width:50%;
+                        margin:0 auto;
+                        .join-tit-txt{
+                            position:relative;
+                            display:inline-block;
+                            transition:all 0.5s 0.5s;
+                            transform:rotate(-5deg);
+                            min-width: 220px;
+                            margin-right:0;
+                            animation:rotateImg .5s forwards;
+                            animation-delay:.2s;
+                            &::before{
+                                content:'';
+                                position: absolute;
+                                width:100%;
+                                height: 96%;
+                                background: #ee7868;
+                                top: 7%;
+                                lefT: 2%;
+                                z-index: 5;
+                                border: 3px solid #3C2121;
+                            }
+                            > span{
+                                width: 100%;
+                                font-size: 2rem;
+                                color: #3C2121;
+                                border: 3px solid #3C2121;
+                                /* border-radius: 3px; */
+                                padding: 12px 60px;
+                                text-align: center;
+                                line-height: 1;
+                                letter-spacing: -1.5px;
+                                font-weight: 700;
+                                display: block;
+                                background: #fff;
+                                position: relative;
+                                z-index: 10;
+                                font-family: 'Montserrat', sans-serif;
+                                letter-spacing: 0
+                            }
+                        }
+                        > img{
+                            height:0;
+                            position:absolute;
+                            top:10px;
+                            right:-30px;
+                            transition:all 0.5s 1s;
+                            animation:arrowImg .5s forwards;
+                            animation-delay: .7s;
+                            transform:scale(0.8);
+                            transform-origin:left top;
+                        }
+                    }
+                    .join-login-all{
+                        max-width:100%;
+                        margin:0 auto;
+                        .join-login-shop{
+                            width:100%;
+                            margin: 60px auto;
+                            .h3-tit{
+                                font-size: 1.2rem;
+                                color: #3c2121;
+                                text-align: left;
+                                letter-spacing: -1px;
+                                font-weight: 600;
+                                border-bottom: 2px solid #3c2121;
+                                padding-bottom: 10px;
+                            }
+                            .join-login-txt{
+                                margin: 0;
+                                text-align: left;
+                                font-size: 0.94rem;
+                                color: #666;
+                                font-weight: 400;
+                                padding:15px 0;
+                            }
+                            .btn-join{
+                                display: block;
+                                border: solid 3px #f52334;
+                                color: #fff;
+                                background: #f52334;
+                                border-radius: 40px;
+                                font-size: 1.08rem;
+                                font-weight: 500;
+                                text-align: center;
+                                padding: 2% 0;
+                                margin: 30px 0 0;
+                            }
+                        }
+                        .join-login-sns{
+                            margin: 60px auto;
+                            text-align: center;
+                            .h3-tit{
+                                font-size: 1.176rem;
+                                color: #3c2121;
+                                text-align: left;
+                                letter-spacing: -1px;
+                                font-weight: 600;
+                                border-bottom: 2px solid #3c2121;
+                                padding-bottom: 10px;
+                            }
+                            .join-login-txt{
+                                margin: 0;
+                                text-align: left;
+                                font-size: 0.94rem;
+                                color: #666;
+                                font-weight: 400;
+                                padding:15px 0;
+                                padding-left: 35px;
+                                background: url(/img/icon_noti.png)no-repeat left 15px;
+                                background-size: 25px 25px;
+                            }
+                            .sns-icon-box{
+                                width:100%;
+                                @include flex;
+                                >li{
+                                    position: Relative;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    width: 33.33%;
+                                    margin-top: 40px;
+                                    padding: 0 15px;
+                                    font-family: 'Noto Sans KR', sans-serif;
+                                    font-size: 0.94rem;
+                                    color: #666;
+                                    text-align: center;
+                                    @include flex;
+                                    flex-direction: column;
+                                    >img{margin-bottom:10px;cursor: pointer;transform:scale(0.7);}
+                                    &::after{
+                                        content: '';
+                                        position: Absolute;
+                                        width: 1px;
+                                        height: 26px;
+                                        background: #dddddd;
+                                        top: 50%;
+                                        right: 0;
+                                        transform: translate(0, -50%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .quick{
+            transform:scale(0.9);
+            .quick_locate{
+                transform-origin:bottom;
+            }
+            .quick_shop{
+                transform-origin:top;
+            }
+        }
+
+    }
+
+}
+@include media(nth($num,6)){
+    main{
+        margin-top:80px;
+        .join-box{
+            max-width:40%;
+            margin:100px auto;
+            .join-tit{
+                width:100%;
+                .join-tit-box{
+                    position:relative;
+                    width:100%;
+                    .join-tbox{
+                        position:relative;
+                        width:50%;
+                        margin:0 auto;
+                        .join-tit-txt{
+                            position:relative;
+                            display:inline-block;
+                            transition:all 0.5s 0.5s;
+                            transform:rotate(-5deg);
+                            min-width: 220px;
+                            margin-right:0;
+                            animation:rotateImg .5s forwards;
+                            animation-delay:.2s;
+                            &::before{
+                                content:'';
+                                position: absolute;
+                                width:100%;
+                                height: 96%;
+                                background: #ee7868;
+                                top: 7%;
+                                lefT: 2%;
+                                z-index: 5;
+                                border: 3px solid #3C2121;
+                            }
+                            > span{
+                                width: 100%;
+                                font-size: 2rem;
+                                color: #3C2121;
+                                border: 3px solid #3C2121;
+                                /* border-radius: 3px; */
+                                padding: 12px 30px;
+                                text-align: center;
+                                line-height: 1;
+                                letter-spacing: -1.5px;
+                                font-weight: 700;
+                                display: block;
+                                background: #fff;
+                                position: relative;
+                                z-index: 10;
+                                font-family: 'Montserrat', sans-serif;
+                                letter-spacing: 0
+                            }
+                        }
+                        > img{
+                            height:0;
+                            position:absolute;
+                            top:10px;
+                            right:-30px;
+                            transition:all 0.5s 1s;
+                            animation:arrowImg .5s forwards;
+                            animation-delay: .7s;
+                            transform:scale(0.8);
+                            transform-origin:left top;
+                        }
+                    }
+                    .join-login-all{
+                        max-width:100%;
+                        margin:0 auto;
+                        .join-login-shop{
+                            width:100%;
+                            margin: 60px auto;
+                            .h3-tit{
+                                font-size: 1.2rem;
+                                color: #3c2121;
+                                text-align: left;
+                                letter-spacing: -1px;
+                                font-weight: 600;
+                                border-bottom: 2px solid #3c2121;
+                                padding-bottom: 10px;
+                            }
+                            .join-login-txt{
+                                margin: 0;
+                                text-align: left;
+                                font-size: 0.94rem;
+                                color: #666;
+                                font-weight: 400;
+                                padding:15px 0;
+                            }
+                            .btn-join{
+                                display: block;
+                                border: solid 3px #f52334;
+                                color: #fff;
+                                background: #f52334;
+                                border-radius: 40px;
+                                font-size: 1.08rem;
+                                font-weight: 500;
+                                text-align: center;
+                                padding: 2% 0;
+                                margin: 30px 0 0;
+                            }
+                        }
+                        .join-login-sns{
+                            margin: 60px auto;
+                            text-align: center;
+                            .h3-tit{
+                                font-size: 1.176rem;
+                                color: #3c2121;
+                                text-align: left;
+                                letter-spacing: -1px;
+                                font-weight: 600;
+                                border-bottom: 2px solid #3c2121;
+                                padding-bottom: 10px;
+                            }
+                            .join-login-txt{
+                                margin: 0;
+                                text-align: left;
+                                font-size: 0.94rem;
+                                color: #666;
+                                font-weight: 400;
+                                padding:15px 0;
+                                padding-left: 35px;
+                                background: url(/img/icon_noti.png)no-repeat left 15px;
+                                background-size: 25px 25px;
+                            }
+                            .sns-icon-box{
+                                width:100%;
+                                @include flex;
+                                >li{
+                                    position: Relative;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    width: 33.33%;
+                                    margin-top: 40px;
+                                    padding: 0 15px;
+                                    font-family: 'Noto Sans KR', sans-serif;
+                                    font-size: 0.94rem;
+                                    color: #666;
+                                    text-align: center;
+                                    @include flex;
+                                    flex-direction: column;
+                                    >img{margin-bottom:10px;cursor: pointer;transform:scale(0.7);}
+                                    &::after{
+                                        content: '';
+                                        position: Absolute;
+                                        width: 1px;
+                                        height: 26px;
+                                        background: #dddddd;
+                                        top: 50%;
+                                        right: 0;
+                                        transform: translate(0, -50%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+@include media(nth($num,5)){
+    main{
+    .join-box{
+        max-width:40%;
+        margin:80px auto;
+        .join-tit{
+            width:100%;
+            .join-tit-box{
+                position:relative;
+                width:100%;
+                .join-tbox{
+                    position:relative;
+                    width:50%;
+                    margin:0 auto;
+                    .join-tit-txt{
+                        position:relative;
+                        display:inline-block;
+                        transition:all 0.5s 0.5s;
+                        transform:rotate(-5deg);
+                        min-width: 200px;
+                        margin-right:0;
+                        animation:rotateImg .5s forwards;
+                        animation-delay:.2s;
+                        &::before{
+                            content:'';
+                            position: absolute;
+                            width:100%;
+                            height: 96%;
+                            background: #ee7868;
+                            top: 7%;
+                            lefT: 2%;
+                            z-index: 5;
+                            border: 3px solid #3C2121;
+                        }
+                        > span{
+                            width: 100%;
+                            font-size: 2rem;
+                            color: #3C2121;
+                            border: 3px solid #3C2121;
+                            /* border-radius: 3px; */
+                            padding: 12px 0px;
+                            text-align: center;
+                            line-height: 1;
+                            letter-spacing: -1.5px;
+                            font-weight: 700;
+                            display: block;
+                            background: #fff;
+                            position: relative;
+                            z-index: 10;
+                            font-family: 'Montserrat', sans-serif;
+                            letter-spacing: 0
+                        }
+                    }
+                    > img{
+                        height:0;
+                        position:absolute;
+                        top:10px;
+                        right:-30px;
+                        transition:all 0.5s 1s;
+                        animation:arrowImg .5s forwards;
+                        animation-delay: .7s;
+                        transform:scale(0.8);
+                        transform-origin:left top;
+                    }
+                }
+                .join-login-all{
+                    max-width:100%;
+                    margin:0 auto;
+                    .join-login-shop{
+                        width:100%;
+                        margin: 60px auto;
+                        .h3-tit{
+                            font-size: 1.2rem;
+                            color: #3c2121;
+                            text-align: left;
+                            letter-spacing: -1px;
+                            font-weight: 600;
+                            border-bottom: 2px solid #3c2121;
+                            padding-bottom: 10px;
+                        }
+                        .join-login-txt{
+                            margin: 0;
+                            text-align: left;
+                            font-size: 0.94rem;
+                            color: #666;
+                            font-weight: 400;
+                            padding:15px 0;
+                        }
+                        .btn-join{
+                            display: block;
+                            border: solid 3px #f52334;
+                            color: #fff;
+                            background: #f52334;
+                            border-radius: 40px;
+                            font-size: 1.08rem;
+                            font-weight: 500;
+                            text-align: center;
+                            padding: 2% 0;
+                            margin: 30px 0 0;
+                        }
+                    }
+                    .join-login-sns{
+                        margin: 60px auto;
+                        text-align: center;
+                        .h3-tit{
+                            font-size: 1.176rem;
+                            color: #3c2121;
+                            text-align: left;
+                            letter-spacing: -1px;
+                            font-weight: 600;
+                            border-bottom: 2px solid #3c2121;
+                            padding-bottom: 10px;
+                        }
+                        .join-login-txt{
+                            margin: 0;
+                            text-align: left;
+                            font-size: 0.94rem;
+                            color: #666;
+                            font-weight: 400;
+                            padding:15px 0;
+                            padding-left: 35px;
+                            background: url(/img/icon_noti.png)no-repeat left 15px;
+                            background-size: 25px 25px;
+                        }
+                        .sns-icon-box{
+                            width:100%;
+                            @include flex;
+                            >li{
+                                position: Relative;
+                                display: inline-block;
+                                vertical-align: middle;
+                                width: 33.33%;
+                                margin-top: 40px;
+                                padding: 0 15px;
+                                font-family: 'Noto Sans KR', sans-serif;
+                                font-size: 0.94rem;
+                                color: #666;
+                                text-align: center;
+                                @include flex;
+                                flex-direction: column;
+                                >img{margin-bottom:10px;cursor: pointer;transform:scale(0.7);}
+                                &::after{
+                                    content: '';
+                                    position: Absolute;
+                                    width: 1px;
+                                    height: 26px;
+                                    background: #dddddd;
+                                    top: 50%;
+                                    right: 0;
+                                    transform: translate(0, -50%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .quick{
+        .quick_locate{
+            transform:scale(0.7);
+        }
+        .quick_shop{
+            transform:scale(0.7);
+        }
+    }
+}
+}

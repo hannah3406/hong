@@ -3047,7 +3047,7 @@ main #PopupLayer {
   right: 0;
   z-index: 100;
   width: 332px;
-  height: 335px;
+  height: 348px;
   cursor: pointer;
   background: #fff;
   border: 1px solid #e0e0e0 !important;
@@ -3092,6 +3092,8 @@ main #PopupLayer #PopupClose {
 main #PopupLayer p {
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 300;
+  font-size: 1rem;
+  line-height: 2.5;
 }
 
 main #PopupLayer p #check {
@@ -3642,7 +3644,7 @@ main .quick .quick_locate {
     max-width: 180px;
     height: 42px;
     line-height: 2.5;
-    border: solid 2px #f52334;
+    border: solid 1.5px #f52334;
   }
   main .m-3 {
     vertical-align: middle;
@@ -3687,7 +3689,7 @@ main .quick .quick_locate {
   }
   main .m-3 .m-3-box .prd-box .prd-box-new .goods-list .m-3-center {
     height: 360px;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
   }
   main .m-3 .m-3-box .prd-box .prd-box-new .goods-list .m-3-center .item-content {
@@ -3758,18 +3760,18 @@ main .quick .quick_locate {
   main .m-4 {
     height: 100vh;
     padding: 0;
-    padding-top: 50px;
+    padding-top: 10px;
   }
   main .m-4 h2 {
     margin-bottom: 5px;
   }
   main .m-4 .m-4-box {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 10px auto;
     padding-top: 20px;
-    height: 70%;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    height: 60%;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
     -webkit-transform-origin: top;
             transform-origin: top;
   }
@@ -3777,14 +3779,14 @@ main .quick .quick_locate {
     margin-top: 5px;
     max-width: 180px;
     height: 40px;
-    line-height: 2.4;
-    border: solid 2px #f52334;
+    line-height: 2.5;
+    border: solid 1.5px #f52334;
   }
   main .m-5 {
     width: 100%;
     height: 100vh;
     padding: 0;
-    padding-top: 60px;
+    padding-top: 10px;
   }
   main .m-5::before {
     width: 1100px;
@@ -3797,7 +3799,7 @@ main .quick .quick_locate {
   }
   main .m-5 .vod_all {
     position: relative;
-    max-width: 1150px;
+    max-width: 1100px;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3819,8 +3821,8 @@ main .quick .quick_locate {
   main .m-5 .vod_all .vod_cont {
     display: inline-block;
     vertical-align: bottom;
-    width: 47%;
-    padding-left: 3%;
+    width: 44%;
+    padding-left: 0%;
     text-align: left;
   }
   main .m-5 .vod_all .vod_cont .vod_cont_text {
@@ -3908,10 +3910,10 @@ main .quick .quick_locate {
     border: 5px solid #f52334;
   }
   main .m-6 {
-    padding: 100px 0 100px;
+    padding: 50px 0;
   }
   main .m-6 .m-6-box .prd-box {
-    max-width: 1200px;
+    max-width: 1100px;
   }
   main #PopupLayer {
     -webkit-animation: fixeditems 1s forwards;
@@ -3920,6 +3922,10 @@ main .quick .quick_locate {
             transform-origin: right top;
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
+  }
+  main #PopupLayer p {
+    font-size: 1.1rem;
+    line-height: 2.5;
   }
   main .quick .quick_locate {
     -webkit-transform-origin: bottom;
@@ -4483,7 +4489,14 @@ main .quick .quick_locate {
             animation: fixeditems 1s forwards;
     top: 60px;
   }
+  main #PopupLayer p {
+    font-size: 1.3rem;
+  }
   main .quick .quick_locate {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  main .quick .quick_shop {
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
   }

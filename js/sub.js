@@ -10,12 +10,14 @@ function objani(el){
 
     this.update = function(){   
         try{
-            if(pos.state){
-                this.zoom += this.zoomSpeed;
-                this.rotateImg += this.rotateImgSpeed;
-            }else{
-                this.zoom -= this.zoomSpeed;
-                this.rotateImg -= this.rotateImgSpeed;
+            if(this.zoom > 0.4){
+                if(pos.state){
+                    this.zoom += this.zoomSpeed;
+                    this.rotateImg += this.rotateImgSpeed;
+                }else{
+                    this.zoom -= this.zoomSpeed;
+                    this.rotateImg -= this.rotateImgSpeed;
+                }
             }
             for(let i=0;i<this.imgZoom.length;i++){
                 this.imgZoom[i].style.transform = `scale(${this.zoom}) rotate(${this.rotateImg}deg)`;

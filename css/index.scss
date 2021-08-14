@@ -1563,7 +1563,7 @@ main{margin-top:80px;
     top:80px;right:0;
     z-index: 100;
     width:332px;
-    height:335px;
+    height:348px;
     cursor: pointer;
     background:#fff;
     border: 1px solid #e0e0e0 !important;
@@ -1594,7 +1594,8 @@ main{margin-top:80px;
         background:url('../img/layer-close.png') no-repeat left top;
         }
     p{
-        font-family: 'Noto Sans KR', sans-serif; font-weight:300;
+        font-family: 'Noto Sans KR', sans-serif; font-weight:300; font-size:1rem;
+        line-height:2.5;
         #check{ margin-left:15px; }
     }
 }
