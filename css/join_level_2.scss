@@ -130,10 +130,11 @@ main{
                                 color: #222222;
                             }
                             table{
-                                padding:15px 0;
+                                padding:20px 0;
                                 border-collapse: separate;
                                 text-indent: initial;
                                 border-spacing: 2px;
+                                width:100%;
                                 tbody{
                                     display: table-row-group;
                                     vertical-align: middle;
@@ -146,7 +147,7 @@ main{
                                             
                                             text-align: left;
                                             border-bottom: 0;
-                                            padding: 7px 0;
+                                            padding: 10px 0;
                                             font-size: 16px;
                                             &:first-child{
                                                 border-left: none;
@@ -175,7 +176,7 @@ main{
                                         td{
                                             width:100%;
                                             border-bottom: 0;
-                                            padding: 7px 0;
+                                            padding: 10px 0;
                                             font-size: 16px;
                                             display: table-cell;
                                             vertical-align: inherit;
@@ -183,18 +184,99 @@ main{
                                                 border-left: none;
                                             }
                                             p{
+                                                padding:3px;
                                                 >input{
                                                     border: 1px solid #d6d6d6;
                                                     color: #666;
                                                     height: 48px;
                                                     width: 70%;
+                                                    border: 1px solid #d6d6d6;
+                                                    color: #666;
+                                                    height: 48px;
+                                                    width: 70%;
+                                                    padding:3px;
                                                 }
                                             }
-                                            .text_warning{
-                                                color: #f52334;
-                                                text-align: left;
-                                                font-size:0.8rem;
-                                                letter-spacing: -1px;
+                                            .emailLine{
+                                                width:100%;
+                                                @include flex;
+                                                >p{
+                                                    width: 70%;
+                                                    input{
+                                                        width: 100%;
+                                                    }
+                                                }
+                                                .emailSelect{
+                                                    position:relative;
+                                                    height: 48px;
+                                                    width:28%;
+                                                    .emailDomain{
+                                                        position: relative;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        padding: 0 0 0 8px;
+                                                        height: 100%;
+                                                        border: 1px solid #ccc;
+                                                        border-radius: 0px;
+                                                        background-color: #fff;
+                                                        color: #444;
+                                                        text-decoration: none;
+                                                        white-space: nowrap;
+                                                        line-height: 24px;
+                                                        width:100%;
+                                                    }
+                                                }
+                                            }
+                                            .address_postcode{
+                                                width:100%;
+                                                @include flex;
+                                                margin-bottom:15px;
+                                                >p{
+                                                    width: 70%;
+                                                    input{width:100%;}
+                                                }
+                                                .btn_post_search{
+                                                    position: relative;
+                                                    display: block;
+                                                    overflow: hidden;
+                                                    border: 1px solid #ccc;
+                                                    border-radius: 0px;
+                                                    background-color: #fff;
+                                                    color: #444;
+                                                    text-decoration: none;
+                                                    white-space: nowrap;
+                                                    line-height: 24px;
+                                                    height:48px;
+                                                    width:28%;
+                                                }
+                                            }
+                                            .address_input{
+                                                >p{
+                                                    margin-bottom:15px;
+                                                }
+                                            }
+                                            .warning-all{
+                                                position:relative;
+                                                .text_warning{
+                                                    position:absolute;
+                                                    top:0;
+                                                    left:0;
+                                                    display:none;
+                                                    color: #f52334;
+                                                    text-align: left;
+                                                    font-size:0.8rem;
+                                                    letter-spacing: -1px;
+                                                    padding-left:20px;
+                                                    background: url(../img/icon_caution02.png) no-repeat 0px 3px;
+                                                }
+                                                .warning2{display:none;}
+                                                .warning2.active{display:block;}
+                                                .text_warning.active{
+                                                    display:block;
+                                                }
+                                            }
+                                            .warning.active{
+                                                border:1px solid #f52334;
                                             }
                                         }
                                     }
@@ -202,8 +284,111 @@ main{
                             }
                         }
                         .join-step2-sub{
-                            .h3-tit{}
-                            table{}
+                            .h3-tit{
+                                border-bottom: 2px solid #3c2121;
+                                padding-bottom: 10px;
+                                font-weight: 600;
+                                font-size: 1.1rem;
+                                color: #222222;
+                            }
+                            table{
+                                padding:20px 0;
+                                border-collapse: separate;
+                                text-indent: initial;
+                                border-spacing: 2px;
+                                width:100%;
+                                tbody{
+                                    display: table-row-group;
+                                    vertical-align: middle;
+                                    border-color: inherit;
+                                    tr{
+                                        display: table-row;
+                                        vertical-align: inherit;
+                                        border-color: inherit;
+                                        th{
+                                            
+                                            text-align: left;
+                                            border-bottom: 0;
+                                            padding: 10px 0;
+                                            font-size: 16px;
+                                            &:first-child{
+                                                border-left: none;
+                                            }
+                                            >span{
+                                                font-family: inherit;
+                                                font-weight: inherit;
+                                                font-size: 16px;
+                                                color: #474747;
+                                                font-weight: 400;
+                                            }
+                                            .important{
+                                                &::before{
+                                                    content: "";
+                                                    background: #f52334;
+                                                    width: 5px;
+                                                    height: 5px;
+                                                    border-radius: 100%;
+                                                    display: inline-block;
+                                                    padding: 0;
+                                                    vertical-align: middle;
+                                                    margin-right: 5px;
+                                                }
+                                            }
+                                        }
+                                        td{
+                                            width:100%;
+                                            border-bottom: 0;
+                                            padding: 10px 0;
+                                            font-size: 16px;
+                                            display: table-cell;
+                                            vertical-align: inherit;
+                                            .member_warning{
+                                                width:70%;
+                                                @include flex;
+                                                .member_warning{
+                                                    width:32.5%;
+                                                    height:48px;
+                                                    .chosen-single{
+                                                        position: relative;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        padding: 0 0 0 8px;
+                                                        height: 100%;
+                                                        border: 1px solid #ccc;
+                                                        border-radius: 0px;
+                                                        background-color: #fff;
+                                                        color: #444;
+                                                        text-decoration: none;
+                                                        white-space: nowrap;
+                                                        line-height: 24px;
+                                                        width:100%;
+
+                                                    }
+                                                }
+                                            }
+                                            .warning-all{
+                                                .text_warning{
+                                                    display:none;
+                                                    color: #f52334;
+                                                    text-align: left;
+                                                    font-size:0.8rem;
+                                                    letter-spacing: -1px;
+                                                    padding-left:20px;
+                                                    background: url(../img/icon_caution02.png) no-repeat 0px 3px;
+                                                }
+                                                .text_warning.active{
+                                                    display:block;
+                                                }
+                                                .warning2{display:none;}
+                                                .warning2.active{display:block;}
+                                            }
+                                            .warning.active{
+                                                border:1px solid #f52334;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                         
                         .btn_step_box{

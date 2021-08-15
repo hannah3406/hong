@@ -1384,10 +1384,11 @@ main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main .h3-tit
 }
 
 main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table {
-  padding: 15px 0;
+  padding: 20px 0;
   border-collapse: separate;
   text-indent: initial;
   border-spacing: 2px;
+  width: 100%;
 }
 
 main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody {
@@ -1405,7 +1406,7 @@ main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table t
 main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody tr th {
   text-align: left;
   border-bottom: 0;
-  padding: 7px 0;
+  padding: 10px 0;
   font-size: 16px;
 }
 
@@ -1436,7 +1437,7 @@ main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table t
 main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody tr td {
   width: 100%;
   border-bottom: 0;
-  padding: 7px 0;
+  padding: 10px 0;
   font-size: 16px;
   display: table-cell;
   vertical-align: inherit;
@@ -1446,18 +1447,265 @@ main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table t
   border-left: none;
 }
 
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody tr td p {
+  padding: 3px;
+}
+
 main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody tr td p > input {
   border: 1px solid #d6d6d6;
   color: #666;
   height: 48px;
   width: 70%;
+  border: 1px solid #d6d6d6;
+  color: #666;
+  height: 48px;
+  width: 70%;
+  padding: 3px;
 }
 
-main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody tr td .text_warning {
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody tr td .emailLine {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody tr td .emailLine > p {
+  width: 70%;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody tr td .emailLine > p input {
+  width: 100%;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody tr td .emailLine .emailSelect {
+  position: relative;
+  height: 48px;
+  width: 28%;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody tr td .emailLine .emailSelect .emailDomain {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 0 0 0 8px;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  background-color: #fff;
+  color: #444;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 24px;
+  width: 100%;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody tr td .address_postcode {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody tr td .address_postcode > p {
+  width: 70%;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody tr td .address_postcode > p input {
+  width: 100%;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody tr td .address_postcode .btn_post_search {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  background-color: #fff;
+  color: #444;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 24px;
+  height: 48px;
+  width: 28%;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody tr td .address_input > p {
+  margin-bottom: 15px;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody tr td .warning-all {
+  position: relative;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody tr td .warning-all .text_warning {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
   color: #f52334;
   text-align: left;
   font-size: 0.8rem;
   letter-spacing: -1px;
+  padding-left: 20px;
+  background: url(../img/icon_caution02.png) no-repeat 0px 3px;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody tr td .warning-all .warning2 {
+  display: none;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody tr td .warning-all .warning2.active {
+  display: block;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody tr td .warning-all .text_warning.active {
+  display: block;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-main table tbody tr td .warning.active {
+  border: 1px solid #f52334;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-sub .h3-tit {
+  border-bottom: 2px solid #3c2121;
+  padding-bottom: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #222222;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-sub table {
+  padding: 20px 0;
+  border-collapse: separate;
+  text-indent: initial;
+  border-spacing: 2px;
+  width: 100%;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-sub table tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-sub table tbody tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-sub table tbody tr th {
+  text-align: left;
+  border-bottom: 0;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-sub table tbody tr th:first-child {
+  border-left: none;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-sub table tbody tr th > span {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 16px;
+  color: #474747;
+  font-weight: 400;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-sub table tbody tr th .important::before {
+  content: "";
+  background: #f52334;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  display: inline-block;
+  padding: 0;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-sub table tbody tr td {
+  width: 100%;
+  border-bottom: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-sub table tbody tr td .member_warning {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-sub table tbody tr td .member_warning .member_warning {
+  width: 32.5%;
+  height: 48px;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-sub table tbody tr td .member_warning .member_warning .chosen-single {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 0 0 0 8px;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  background-color: #fff;
+  color: #444;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 24px;
+  width: 100%;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-sub table tbody tr td .warning-all .text_warning {
+  display: none;
+  color: #f52334;
+  text-align: left;
+  font-size: 0.8rem;
+  letter-spacing: -1px;
+  padding-left: 20px;
+  background: url(../img/icon_caution02.png) no-repeat 0px 3px;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-sub table tbody tr td .warning-all .text_warning.active {
+  display: block;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-sub table tbody tr td .warning-all .warning2 {
+  display: none;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-sub table tbody tr td .warning-all .warning2.active {
+  display: block;
+}
+
+main .join-box .join-tit .join-tit-box .join-step2 form .join-step2-sub table tbody tr td .warning.active {
+  border: 1px solid #f52334;
 }
 
 main .join-box .join-tit .join-tit-box .join-step2 form .btn_step_box {
