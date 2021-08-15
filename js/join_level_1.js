@@ -7,13 +7,16 @@ contentAll.addEventListener('click',function(){
 })
 
 //next버튼 click
-btnNextStep.addEventListener('click',function(){
+btnNextStep.addEventListener('click',function(e){
+        e.preventDefault();
         if(!content1.checked){
+                impMsg2.classList.remove('active');
                 impMsg1.classList.add('active');
         }else if(!content2.checked){
+                impMsg1.classList.remove('active');
                 impMsg2.classList.add('active');
         }else{
-        join.action = 'join.html';
+        join.action = 'join_level_2.html';
         join.submit();
         }
 })
