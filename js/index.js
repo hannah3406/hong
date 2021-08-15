@@ -175,8 +175,6 @@ $(window).on('mousewheel DOMMouseScroll',function(e){
         }else{
             if(num>0)num--;
         }
-
-        console.log(num);
         $('html,body').stop().animate({
             scrollTop : $(window).height() * num
         },{queue:false})
@@ -310,7 +308,14 @@ window.addEventListener('scroll',function(){
 
     //바닥에 닿았을 때(아래 조건이 true일때) 다음페이지로 넘어가지거나 특정 페이지들 실행
     if(domHei - winHei <= window.scrollY){
-        alert('서브페이지도 둘러보시겠어요? :D');
-        location.href="sub.html";
+
+        nextStep.classList.add('active');
+        nextPage1.addEventListener('click',function(){
+            location.href="sub.html";
+        })
+        curPage1.addEventListener('click',function(){
+            nextStep.classList.remove('active');
+        })
+
     }
 });

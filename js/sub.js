@@ -81,15 +81,22 @@ window.addEventListener('scroll',function(){
         });
     })
 
-//문서 최하단 위치 시 회원가입 창 이동
+//문서 최하단 위치 시 서브페이지 이동
 window.addEventListener('scroll',function(){
     let domHei = document.documentElement.offsetHeight;
     let winHei = window.innerHeight;
 
     //바닥에 닿았을 때(아래 조건이 true일때) 다음페이지로 넘어가지거나 특정 페이지들 실행
     if(domHei - winHei <= window.scrollY){
-        alert('회원가입도 해보시겠어요? :D');
-        location.href="join.html";
+
+        nextStep.classList.add('active');
+        nextPage2.addEventListener('click',function(){
+            location.href="join.html";
+        })
+        curPage2.addEventListener('click',function(){
+            nextStep.classList.remove('active');
+        })
+
     }
 });
 
