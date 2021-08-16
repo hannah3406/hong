@@ -181,6 +181,7 @@ footer{
     }
 }
 
+
 };
 @include media(nth($num,6)){
     *{font-size:15px;}
@@ -284,6 +285,21 @@ footer{
         }
     }
 }
+main{
+#nextStep{
+    #nextStepContent{
+        width:40%;
+        height:50%;
+        img{
+            width:120px;
+            margin-left:80px;
+        }
+        .nextStepTxt{
+            width:63%;
+        }
+    }
+}
+}
 footer{
     .footer{
         .foot_wr{
@@ -356,6 +372,8 @@ footer{
         }
     }
 }
+
+
 
 };
 @include media(nth($num,5)){
@@ -467,6 +485,21 @@ footer{
                         }
                     }
                 }
+            }
+        }
+    }
+}
+main{
+    #nextStep{
+        #nextStepContent{
+            width:40%;
+            height:50%;
+            img{
+                width:100px;
+                margin-left:60px;
+            }
+            .nextStepTxt{
+                width:63%;
             }
         }
     }

@@ -27,6 +27,10 @@ function mailcheck(){
     i=document.joinStep2.emailDomain.selectedIndex // 선택항목의 인덱스 번호
     var mail=document.joinStep2.emailDomain.options[i].value // 선택항목 value
     document.joinStep2.email.value += mail
+    if(i==0){
+        document.joinStep2.email.value ='';
+        document.joinStep2.email.focus();
+    }
 }
 //next버튼 click
 btnNextStep1.addEventListener('click',function(e){

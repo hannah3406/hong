@@ -448,6 +448,7 @@ footer{
 }
 #nextStep.active{
     display:block;
+    transition:2s;
 }
 
 @import "_mediaCommon"

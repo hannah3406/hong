@@ -1,0 +1,347 @@
+$num : (480px, 768px, 1024px, 1200px, 1400px, 1600px, 1800px);
+
+@mixin media($width){
+    @media(max-width:$width){
+        @content;
+    }
+}
+//pc
+@include media(nth($num,7)){
+    main{
+        .join-box{
+            max-width:40%;
+            margin:80px auto;
+            .join-tit{
+                width:100%;
+                .join-tit-box{
+                    position:relative;
+                    width:100%;
+                    .join-tbox{
+                        transform:scale(0.8);
+                        transform-origin:bottom;
+                        position:relative;
+                        width:60%;
+                        margin:0 auto;
+                    }
+                    .join-step-box{
+                        transform:scale(0.8);
+                        transform-origin:top;
+                        width:65%;
+                        padding: 10px;
+                    }
+                    .join-step2{
+                        transform:scale(0.9);
+                        transform-origin:top;
+                        form{
+                            padding: 20px;
+                            width: 100%;
+                            .join-step2-main{
+                                table{
+                                    tbody{
+                                        tr{
+                                            th{margin:20px 0;}
+                                            td{
+                                                padding: 0;
+                                                margin:20px 0;
+                                                font-size: 0.9rem;
+                                                p{
+                                                    padding:0;
+                                                    margin:15px 0;
+                                                    >input{
+                                                        height: 38px;
+                                                        width: 70%;
+                                                        border: 1px solid #d6d6d6;
+                                                        color: #666;
+                                                        padding:3px;
+                                                    }
+                                                }
+                                                .emailLine{
+                                                    width:100%;
+                                                    @include flex;
+                                                    >p{
+                                                        width: 70%;
+                                                        input{
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                                    .emailSelect{
+                                                        height: 38px;
+                                                    }
+                                                }
+                                                .address_postcode{
+                                                    .btn_post_search{
+                                                        height:38px;
+                                                    }
+                                                }
+                                                .warning-all{
+                                                    .text_warning{
+                                                        top:-10px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .join-step2-sub{
+                                table{
+                                    tbody{
+                                        tr{
+                                            th{
+                                                .important{
+                                                    &::before{transform:scale(0.6);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .btn_step_box{
+                                transform:scale(0.8);
+                                transform-origin:top;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        //quick_icon
+        .quick{
+            transform:scale(0.9);
+        }
+        .quick_locate{
+            transform-origin:bottom;
+        }
+        .quick_shop{
+            transform-origin:top;
+        }
+    }
+}
+@include media(nth($num,6)){
+    main{
+        .join-box{
+            max-width:40%;
+            margin:80px auto;
+            .join-tit{
+                width:100%;
+                .join-tit-box{
+                    position:relative;
+                    width:100%;
+                    .join-tbox{
+                        transform:scale(0.8);
+                        transform-origin:bottom;
+                        position:relative;
+                        width:60%;
+                        margin:0 auto;
+                    }
+                    .join-step-box{
+                        transform:scale(0.8);
+                        transform-origin:top;
+                        width:65%;
+                        padding: 10px;
+                    }
+                    .join-step2{
+                        transform:scale(0.9);
+                        transform-origin:top;
+                        form{
+                            padding: 20px;
+                            width: 100%;
+                            .join-step2-main{
+                                table{
+                                    tbody{
+                                        tr{
+                                            th{margin:20px 0;}
+                                            td{
+                                                padding: 0;
+                                                margin:20px 0;
+                                                font-size: 0.9rem;
+                                                p{
+                                                    padding:0;
+                                                    margin:15px 0;
+                                                    >input{
+                                                        height: 38px;
+                                                        width: 70%;
+                                                        border: 1px solid #d6d6d6;
+                                                        color: #666;
+                                                        padding:3px;
+                                                    }
+                                                }
+                                                .emailLine{
+                                                    width:100%;
+                                                    @include flex;
+                                                    >p{
+                                                        width: 70%;
+                                                        input{
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                                    .emailSelect{
+                                                        height: 38px;
+                                                    }
+                                                }
+                                                .address_postcode{
+                                                    .btn_post_search{
+                                                        height:38px;
+                                                    }
+                                                }
+                                                .warning-all{
+                                                    .text_warning{
+                                                        top:-10px;
+                                                        height:20px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .join-step2-sub{
+                                table{
+                                    tbody{
+                                        tr{
+                                            th{
+                                                .important{
+                                                    &::before{transform:scale(0.6);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .btn_step_box{
+                                transform:scale(0.8);
+                                transform-origin:top;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        //quick_icon
+        .quick{
+            .quick_locate{
+                transform-origin:bottom;
+            }
+            .quick_shop{
+                transform-origin:top;
+            }
+        }
+    }
+}
+@include media(nth($num,5)){
+    main{
+        .join-box{
+            max-width:40%;
+            margin:80px auto;
+            .join-tit{
+                width:100%;
+                .join-tit-box{
+                    position:relative;
+                    width:100%;
+                    .join-tbox{
+                        transform:scale(0.8);
+                        transform-origin:bottom;
+                        position:relative;
+                        width:60%;
+                        margin:0 auto;
+                    }
+                    .join-step-box{
+                        transform:scale(0.8);
+                        transform-origin:top;
+                        width:65%;
+                        padding: 10px;
+                    }
+                    .join-step2{
+                        transform:scale(0.9);
+                        transform-origin:top;
+                        form{
+                            padding: 20px;
+                            width: 100%;
+                            .join-step2-main{
+                                table{
+                                    tbody{
+                                        tr{
+                                            th{margin:20px 0;}
+                                            td{
+                                                padding: 0;
+                                                margin:20px 0;
+                                                font-size: 0.9rem;
+                                                p{
+                                                    padding:0;
+                                                    margin:20px 0;
+                                                    >input{
+                                                        height: 38px;
+                                                        width: 70%;
+                                                        border: 1px solid #d6d6d6;
+                                                        color: #666;
+                                                        padding:3px;
+                                                    }
+                                                }
+                                                .emailLine{
+                                                    width:100%;
+                                                    @include flex;
+                                                    >p{
+                                                        width: 70%;
+                                                        input{
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                                    .emailSelect{
+                                                        height: 38px;
+                                                    }
+                                                }
+                                                .address_postcode{
+                                                    .btn_post_search{
+                                                        height:38px;
+                                                    }
+                                                }
+                                                .warning-all{
+                                                    .text_warning{
+                                                        top:-14px;
+                                                        height:20px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .join-step2-sub{
+                                table{
+                                    tbody{
+                                        tr{
+                                            th{
+                                                .important{
+                                                    &::before{transform:scale(0.6);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .btn_step_box{
+                                transform:scale(0.8);
+                                transform-origin:top;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        //quick_icon
+        .quick{
+            .quick_locate{
+                transform:scale(0.7);
+            }
+            .quick_shop{
+                transform:scale(0.7);
+            }
+        }
+    }
+}

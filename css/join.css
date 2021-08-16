@@ -636,6 +636,8 @@ footer .footer .foot_copy {
 
 #nextStep.active {
   display: block;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 @media (max-width: 1800px) {
@@ -929,6 +931,17 @@ footer .footer .foot_copy {
     color: #f52334;
     font-weight: 500;
   }
+  main #nextStep #nextStepContent {
+    width: 40%;
+    height: 50%;
+  }
+  main #nextStep #nextStepContent img {
+    width: 120px;
+    margin-left: 80px;
+  }
+  main #nextStep #nextStepContent .nextStepTxt {
+    width: 63%;
+  }
   footer .footer .foot_wr {
     position: relative;
     width: 100%;
@@ -1129,6 +1142,17 @@ footer .footer .foot_copy {
   .head-all .ham_menu ul .ham_menu_list .ham_menu_box ul li:hover {
     color: #f52334;
     font-weight: 500;
+  }
+  main #nextStep #nextStepContent {
+    width: 40%;
+    height: 50%;
+  }
+  main #nextStep #nextStepContent img {
+    width: 100px;
+    margin-left: 60px;
+  }
+  main #nextStep #nextStepContent .nextStepTxt {
+    width: 63%;
   }
   footer .footer .foot_wr {
     position: relative;
