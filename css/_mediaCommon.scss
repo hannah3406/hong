@@ -1,4 +1,4 @@
-$num : (480px, 768px, 1024px,1200px, 1400px, 1600px);
+$num : (480px, 768px, 1024px,1200px, 1400px, 1600px, 1800px);
 
 @mixin media($width){
     @media(max-width:$width){
@@ -6,7 +6,7 @@ $num : (480px, 768px, 1024px,1200px, 1400px, 1600px);
     }
 }
 //pc
-@include media(nth($num,6)){
+@include media(nth($num,7)){
     *{font-size:15px;}
     h2{font-size:2.5rem;}
     // header
@@ -14,11 +14,13 @@ $num : (480px, 768px, 1024px,1200px, 1400px, 1600px);
     .head-top{
         .head{
             .logo{
-                transform:scale(0.8);
+                width:10%;
+                transform:scale(0.9);
+                margin-right:0;
             }
             .menu_list{
-                width:48%;
-                padding-right:10%;
+                width:56%;
+                padding-right:24%;
             }
             .menu_tab{
                 width:30%;
@@ -126,14 +128,15 @@ footer{
                         display: inline-block;
                         vertical-align: middle;
                         margin-right: 20px;
-                        font-size: 1.47rem;
+                        font-size: 1.2rem;
                         color:white;
                     }
                 }
                 .foot_txt{
                     margin-top: 30px;
-                    font-size: 0.88rem;
+                    font-size: 0.9rem;
                     font-weight: 300;
+                    line-height:1.5;
                     color: rgba(236, 236, 236, 0.7) !important;
                 }
                 &::after{
@@ -153,11 +156,191 @@ footer{
             }
             .text_center{
                 text-align: center;
+                img{transform:scale(0.7);}
             }
             .text_right{
                 text-align: right;
+                font-size: 1.2rem;
                 .sns_list{
                     margin-top: 40px;
+                    transform-origin:right;
+                    transform:scale(0.7);
+                }
+            }
+        }
+        .foot_copy{
+            width: 100%;
+            height: 57px;
+            line-height: 57px;
+            background: #2d1817;
+            font-family: 'Roboto', sans-serif;
+            color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+            font-size: 0.82rem;
+        }
+    }
+}
+
+};
+@include media(nth($num,6)){
+    *{font-size:15px;}
+    h2{font-size:2.5rem;}
+    // header
+.head-all{
+    .head-top{
+        .head{
+            .logo{
+                width:10%;
+                transform:scale(0.9);
+                margin-right:0;
+            }
+            .menu_list{
+                width:56%;
+                padding-right:24%;
+            }
+            .menu_tab{
+                width:30%;
+                padding-right:3%;
+                .menu_tab2{
+                    width: 200px;
+                    height: 42px;
+                    border: 2px solid #f52334;
+                    li{
+                        &:nth-of-type(2){
+                            height: 42px;
+                        }
+                    }
+                }
+                .menu_trigger{
+                    transform:scale(0.8);
+                }
+            }
+        }
+    }
+    .menu_box{
+        height:280px;
+        .menu_box_content{
+                figure{ 
+                    width:63.5%;
+                    height:$w;
+                    img{width:$w;height:$w;}
+                }
+        }
+    }
+    .ham_menu{
+        a{
+            display: inline-block;
+            margin: 40px auto;
+            img{width:100%;}
+        }
+        .ham_close{
+            transform:scale(0.8);
+        }
+        ul{
+            .ham_menu_list{
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 95%;
+                    height: calc(100% - 140px);
+                    top: 28%;
+                    left: 6%;
+                    background: #ffdcd1;
+                    border: 2px solid #3c2121;
+                    z-index: -1;
+                    transition: all 0.5s;
+                }
+                
+                .ham_menu_box{
+                    padding: 40px 15px 40px;
+                    &:hover{
+                        background: #ffe675;
+                    }
+                    ul{
+                        width:100%;
+                        display:flex;
+                        align-items: center;
+                        justify-content: top;
+                        flex-direction: column;
+
+                        li{
+                            display: list-item;
+                            text-align: left;
+                            width:98%;
+                            margin:0 auto;
+                            font-size: 1.5rem;
+                            color: #3c2121;
+                            font-weight: 300;
+                            letter-spacing: -2.5px;
+                            margin-bottom:10px;
+                            &:hover{
+                                color:#f52334;
+                                font-weight:500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    .footer{
+        .foot_wr{
+            position: relative;
+            width: 100%;
+            padding: 80px 50px 60px;
+            background: #3b2120;
+            color: #fff !important;
+            @include flex;
+            .foot_box{
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                width: 33.33%;
+                color:white;
+                ul{
+                    li{
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 20px;
+                        font-size: 1.2rem;
+                        color:white;
+                    }
+                }
+                .foot_txt{
+                    margin-top: 30px;
+                    font-size: 0.9rem;
+                    font-weight: 300;
+                    line-height:1.5;
+                    color: rgba(236, 236, 236, 0.7) !important;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: 146px;
+                    background: rgba(255,255,255,0.2);
+                    top: 50%;
+                    margin-top: -73px;
+                    right: 0;
+                }
+                &:last-of-type::after{
+                    width:0;
+                    height:0;
+                }
+            }
+            .text_center{
+                text-align: center;
+                img{transform:scale(0.7);}
+            }
+            .text_right{
+                text-align: right;
+                font-size: 1.2rem;
+                .sns_list{
+                    margin-top: 40px;
+                    transform-origin:right;
+                    transform:scale(0.7);
                 }
             }
         }

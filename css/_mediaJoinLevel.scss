@@ -7,5 +7,154 @@ $num : (480px, 768px, 1024px, 1200px, 1400px, 1600px, 1800px);
 }
 //pc
 @include media(nth($num,7)){
-    
+    main{
+        .join-box{
+            .join-tit{
+                .join-step-box{
+                    width:50%;
+                    padding: 14px;
+                    > li{
+                        width:32%;
+                        margin-left:30px;
+                    }
+                    > li.stepOn{
+                        background: #fef5c0;
+                        >img{
+                            opacity: 1;
+                        }
+                        >span{font-weight:bold;}
+                    }
+                }
+            }
+        }
+        
+        //quick_icon
+        .quick{
+            transform:scale(0.9);
+        }
+        .quick_locate{
+            transform-origin:bottom;
+        }
+        .quick_shop{
+            transform-origin:top;
+        }
+    }
+}
+@include media(nth($num,6)){
+    main{
+        .join-box{
+            max-width:40%;
+            margin:80px auto;
+            .join-tit{
+                width:100%;
+                .join-tit-box{
+                    position:relative;
+                    width:100%;
+                    .join-tbox{
+                        transform:scale(0.8);
+                        transform-origin:bottom;
+                        position:relative;
+                        width:60%;
+                        margin:0 auto;
+                    }
+                }
+            
+                .join-step-box{
+                    transform:scale(0.8);
+                    transform-origin:top;
+                    width:55%;
+                    padding: 10px;
+                }
+                .join-step-1{
+                    transform:scale(0.9);
+                    transform-origin:top;
+                    .btn_step_box{
+                        transform:scale(0.8);
+                        transform-origin:top;
+                    }
+                }
+                .join-step2{
+                    transform:scale(0.9);
+                    transform-origin:top;
+                    .btn_step_box{
+                        transform:scale(0.8);
+                        transform-origin:top;
+                    }
+                }
+                .btn_step_box{
+                    transform:scale(0.8);
+                    transform-origin:top;
+                }
+            }
+        }
+        
+        //quick_icon
+        .quick{
+            .quick_locate{
+                transform-origin:bottom;
+            }
+            .quick_shop{
+                transform-origin:top;
+            }
+        }
+    }
+}
+@include media(nth($num,5)){
+    main{
+        .join-box{
+            max-width:40%;
+            margin:80px auto;
+            .join-tit{
+                width:100%;
+                .join-tit-box{
+                    position:relative;
+                    width:100%;
+                    .join-tbox{
+                        transform:scale(0.8);
+                        transform-origin:bottom;
+                        position:relative;
+                        width:60%;
+                        margin:0 auto;
+                    }
+                }
+            
+                .join-step-box{
+                    transform:scale(0.8);
+                    transform-origin:top;
+                    width:65%;
+                    padding: 10px;
+                }
+                .join-step-1{
+                    transform:scale(0.9);
+                    transform-origin:top;
+                    .btn_step_box{
+                        transform:scale(0.8);
+                        transform-origin:top;
+                    }
+                }
+                .join-step2{
+                    transform:scale(0.9);
+                    transform-origin:top;
+                    .btn_step_box{
+                        transform:scale(0.8);
+                        transform-origin:top;
+                    }
+                }
+                .btn_step_box{
+                    transform:scale(0.8);
+                    transform-origin:top;
+                }
+            }
+        }
+        
+        //quick_icon
+        .quick{
+            .quick_locate{
+                transform:scale(0.7);
+            }
+            .quick_shop{
+                transform:scale(0.7);
+            }
+        }
+    }
 }
