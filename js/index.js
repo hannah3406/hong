@@ -247,6 +247,7 @@ let objVod = [];
     // 4. The API will call this function when the video player is ready.
     function onPlayerReady(event) {
     event.target.pauseVideo();
+    event.target.mute();
     }
 
     var done = false;
